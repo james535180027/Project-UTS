@@ -22,3 +22,45 @@
     font-size: 18px;
     color: #E57B30 !important;
 }
+
+/* online reservation */
+.online-reservation {
+    margin-top: 90px;
+}
+
+.online-reservation h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.online-reservation p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: grey;
+}
+
+/* Carousel */
+.carousel {
+    margin-top: 100px;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel p {
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+}
