@@ -1,0 +1,150 @@
+/* navbar */
+.navbar-brand {
+    font-family: satisfy;
+    font-size: 32px;
+    color: red !important;
+}
+
+.navbar-nav .active {
+    font-family: 'red rose';
+    font-size: 18px;
+    color: #E57B30 !important;
+}
+
+.nav-link {
+    font-family: 'red rose';
+    font-size: 18px;
+    color: #4F4f4f !important;
+}
+
+.nav-link:hover {
+    font-family: 'red rose';
+    font-size: 18px;
+    color: #E57B30 !important;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .container {
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+
+/* online reservation */
+.online-reservation {
+    margin-top: 90px;
+}
+
+.online-reservation h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.online-reservation p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: grey;
+}
+
+
+/* Carousel */
+.carousel {
+    margin-top: 100px;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel p {
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+}
+
+
+/* card */
+.card-title {
+    text-align: center;
+    margin-top: 55px;
+    color: #D23520;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card {
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.card img {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer */
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #762014;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+.img-thumbnail {
+    background-color: #762014;
+}
+
+@media screen and (max-width:600px) {
+    .toast {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
