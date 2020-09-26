@@ -46,7 +46,7 @@
     position: relative;
 }
 
-    /* online reservation */
+/* online reservation */
 .online-reservation {
     margin-top: 90px;
 }
@@ -86,4 +86,13 @@
     font-size: 20px;
     color: grey;
     text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
