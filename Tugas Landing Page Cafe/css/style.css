@@ -88,6 +88,11 @@ button {
   margin-left: 10%;
 }
 
+#pesen-booking {
+  margin-left: 10%;
+  text-align: center;
+}
+
 /* Carousel */
 .carousel {
   margin-top: 100px;
@@ -315,5 +320,10 @@ button {
     display: block;
     margin-right: 0;
     font-weight: 600
+  }
+
+  #pesen-booking,
+  #pelajari-lanjut {
+    width: 80%;
   }
 }
