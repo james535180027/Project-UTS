@@ -23,6 +23,7 @@
   color: #e57b30 !important;
 }
 
+/* Jumbotron */
 .jumbotron {
   background-image: url(../img/jumbotron.jpg);
   background-size: cover;
