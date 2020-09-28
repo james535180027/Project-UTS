@@ -96,6 +96,8 @@ button {
 /* Carousel */
 .carousel {
   margin-top: 100px;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .carousel-inner img {
@@ -118,6 +120,13 @@ button {
 }
 
 /* card */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 .card-title {
   font-size: 50px;
   font-weight: 400;
@@ -154,6 +163,11 @@ button {
   #deskripsi-opening {
     text-align: center;
     margin-left: 0;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+    object-fit: cover;
   }
 }
 
