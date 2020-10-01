@@ -123,7 +123,7 @@ button {
 .row {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding-bottom: 30px;
 }
 
