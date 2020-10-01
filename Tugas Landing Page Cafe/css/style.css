@@ -1,3 +1,7 @@
+* {
+  max-width: 100%;
+}
+
 /* navbar */
 .navbar-brand {
   font-family: satisfy;
