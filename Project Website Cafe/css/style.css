@@ -24,31 +24,64 @@
 }
 /* akhir navbar */
 
+/*===================================================================================================*/
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../img/Coffee.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .container {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+/*akhir jumbotron*/
+
+/*judul contact us*/
+.judul-contact-us{
+  font-family: 'Abril Fatface';
+}
+/*akhir judul contact us*/
 
 
-/* style index */
+/* style container contact us */
+.contact-us{
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* akhir container contact us */
 
-/* akhir style index */
+/*style foto kontak*/
+.foto-kopi{
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+/*akhir style foto kontak*/
 
+/*padding button submit*/
+.padding-button{
+  margin-bottom: 40px;
+}
+/*akhir padding button*/
 
-
-/* style menu */
-
-/* akhir style menu */
-
-
-
-/* style reservasi */
-
-/* akhir style resercasi */
-
-
-
-/* style kontak */
-
-/* akhir style kontak */
-
-
+/*===================================================================================================*/
 
 /* footer dan media screen */
 @media screen and (max-width: 600px) {
