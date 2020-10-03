@@ -1,3 +1,7 @@
+* {
+  max-width: 100%;
+}
+
 /* navbar */
 .navbar-brand {
   font-family: satisfy;
@@ -123,7 +127,6 @@ button {
 .row {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-bottom: 30px;
 }
 
