@@ -35,18 +35,41 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#">Beranda<span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="menu.html">Menu</a>
-          <a class="nav-link" href="reservasi.html">Reservasi</a>
-          <a class="nav-link" href="kontak.html">Kontak</a>
-          <button type="button" class="btn btn-danger">Login</button>
+          <a class="nav-link" href="index.html">Kembali ke halaman utama</a>
         </div>
       </div>
     </div>
   </nav>
+  <script>
+    function login_form()
+    {
+         location.href = "login.html";
+    } 
+  </script>
   <!-- akhir Navbar -->
 
-  
+  <div class="container">
+    <h2 class="judul-login">Login</h2>
+    <div class="card card-login">
+        <div class="card-body">
+            <form>
+                <div class="form-group form-group-login">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group form-group-login">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg btn-block">Login</button>
+
+                <h4 class="pembatas-form-login"><span>ATAU</span></h4>
+
+                <p class="link-registrasi">Belum punya akun? <a href="registrasi.html">Daftar sekarang</a></p>
+            </form>
+        </div>
+    </div>
+  </div>
 
 
 

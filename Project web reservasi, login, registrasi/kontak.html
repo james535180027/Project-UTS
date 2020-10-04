@@ -35,19 +35,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#">Beranda<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Beranda</a>
           <a class="nav-link" href="menu.html">Menu</a>
           <a class="nav-link" href="reservasi.html">Reservasi</a>
-          <a class="nav-link" href="kontak.html">Kontak</a>
-          <button type="button" class="btn btn-danger">Login</button>
+          <a class="nav-link" href="lokasi.html">Lokasi</a>
+          <a class="nav-link active" href="#">Kontak<span class="sr-only">(current)</span></a>
+          <button type="button" class="btn btn-danger rounded-pill" onclick="login_form()">Login</button>
         </div>
       </div>
     </div>
   </nav>
+  <script>
+    function login_form()
+    {
+         location.href = "login.html";
+    } 
+  </script>
   <!-- akhir Navbar -->
 
   
-
+  
 
 
   <!-- Footer -->
