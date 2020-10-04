@@ -84,10 +84,10 @@
   margin: 50px;
 }
 
-.headmenu button {
+.hmenu button {
   font-size: 50px;
   font-family: sans-serif;
-  border: none;
+  margin: 50px;
 }
 
 .makanan {
