@@ -87,6 +87,7 @@
 .headmenu button {
   font-size: 50px;
   font-family: sans-serif;
+  border: none;
 }
 
 .makanan {
@@ -107,6 +108,7 @@
 img {
   width: 250px;
   height: 250px;
+  border-radius: 10px;
 }
 
 /* Akhir Body Menu Makanan */
