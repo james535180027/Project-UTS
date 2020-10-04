@@ -5,20 +5,20 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
-  
   <!--Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- My Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
-
   <!-- My CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/beranda.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/reservasi.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/footer.css" />
   <link rel="shortcut icon" type="image/x-icon" href="img/coffee.svg" />
   <title>Coffeeteria</title>
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -35,75 +35,115 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#">Beranda<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="#bagian-home">Beranda<span class="sr-only">(current)</span></a>
           <a class="nav-link" href="menu.html">Menu</a>
           <a class="nav-link" href="reservasi.html">Reservasi</a>
           <a class="nav-link" href="lokasi.html">Lokasi</a>
           <a class="nav-link" href="kontak.html">Kontak</a>
-          <button type="button" class="btn btn-danger rounded-pill" onclick="login_form()">Login</button>
+          <button class="btn btn-danger rounded-pill" id="btnLogin">Login</button>
         </div>
       </div>
     </div>
   </nav>
-  <script>
-    function login_form()
-    {
-         location.href = "login.html";
-    } 
-  </script>
   <!-- akhir Navbar -->
 
-  
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    </div>
+  </div>
+  <!-- akhir Jumbotron -->
 
 
+
+
+  <!-- awal card -->
+  <div class="row">
+    <div class="col-md-auto">
+      <div class="card promoCard" style="width: 18rem">
+        <img src="img/buy-one-get-one.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">Beli 1 Gratis 1 setiap tanggal 25</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="card promoCard" style="width: 18rem">
+        <img src="img/25off.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Dapatkan diskon sebesar 25% setiap hari senin
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="card promoCard" style="width: 18rem">
+        <img src="img/Rainbow Macarons.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Gratis macarons untuk setiap pembelian lebih dari 50 ribu
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir card -->
 
   <!-- Footer -->
-      <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Caffetaria provides you the best coffee menus. Find Your Inspiration, Brighten your day, live your ideas, Actualize Your Plans.</p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Location</h6>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.252941634577!2d106.79138638801619!3d-6.168091001682152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sUniversitas%20Tarumanagara%20Kampus%20I!5e0!3m2!1sid!2sid!4v1601164780820!5m2!1sid!2sid" 
-            width="250" height="250" frameborder="0" style="border:0;"
-            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="#bagian-home">Back To Top</a></li>
-              <li><a href="#biji-kopi">Biji Kopi</a></li>
-              <li><a href="#reservasi">Reservasi</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#promo">Promo</a></li>
-              <li><a href="#">Lowongan</a></li>
-            </ul>
-          </div>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">
+            Caffetaria provides you the best coffee menus. Find Your
+            Inspiration, Brighten your day, live your ideas, Actualize Your
+            Plans.
+          </p>
         </div>
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Web Programming 2020
-            </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
-            </ul>
-          </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Location</h6>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.252941634577!2d106.79138638801619!3d-6.168091001682152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sUniversitas%20Tarumanagara%20Kampus%20I!5e0!3m2!1sid!2sid!4v1601164780820!5m2!1sid!2sid"
+            width="250" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-xs-5 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#bagian-home">Back To Top</a></li>
+            <li><a href="#biji-kopi">Biji Kopi</a></li>
+            <li><a href="#reservasi">Reservasi</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#">Lowongan</a></li>
+          </ul>
         </div>
       </div>
-</footer>
+
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Web Programming 2020</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="linkedin" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- akhir footer -->
 
   <script src="js/jquery-3.5.1.min.js"></script>

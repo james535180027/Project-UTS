@@ -1,0 +1,31 @@
+/* navbar */
+.navbar-inner {
+    background-color: transparent;
+}
+
+
+.navbar-brand {
+    font-family: satisfy;
+    font-size: 32px;
+    color: red !important;
+}
+
+.navbar-nav .active {
+    font-family: "red rose";
+    font-size: 18px;
+    color: #e57b30 !important;
+}
+
+.nav-link {
+    font-family: "red rose";
+    font-size: 18px;
+    color: #4f4f4f !important;
+}
+
+.nav-link:hover {
+    font-family: "red rose";
+    font-size: 18px;
+    color: #e57b30 !important;
+}
+
+/* akhir navbar */

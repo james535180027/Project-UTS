@@ -1,0 +1,86 @@
+/* style login */
+.judul-login {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.card-login {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-group-login {
+    padding-bottom: 20px;
+}
+
+.link-registrasi {
+    text-align: center;
+}
+
+.pembatas-form-login {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    line-height: 0.1em;
+    margin: 40px 0 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.pembatas-form-login span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+/* akhir style login */
+
+
+/* style registrasi */
+.judul-registrasi {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.card-registrasi {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-group-registrasi {
+    padding-bottom: 20px;
+}
+
+.form-group-checkbox {
+    padding-top: 20px;
+}
+
+.link-login {
+    text-align: center;
+}
+
+.pembatas-form-registrasi {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    line-height: 0.1em;
+    margin: 40px 0 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.pembatas-form-registrasi span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+/* akhir style registrasi */

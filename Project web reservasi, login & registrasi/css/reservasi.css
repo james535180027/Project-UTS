@@ -1,0 +1,21 @@
+/* style reservasi */
+.img-reservasi {
+    margin-top: 20px;
+}
+
+.judul-reservasi {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-reservasi {
+    margin-top: 30px;
+}
+
+.btn-reservasi {
+    float: right;
+    margin-bottom: 40px;
+}
+
+/* akhir style reservasi */

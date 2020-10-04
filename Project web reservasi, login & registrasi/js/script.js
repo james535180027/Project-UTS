@@ -33,3 +33,10 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+
+$(document).ready(function () {
+    $("#btnLogin").click(() => {
+        location.href = "login.html";
+    });
+});
