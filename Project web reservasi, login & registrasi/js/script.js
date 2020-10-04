@@ -4,9 +4,11 @@ if ($(window).width() > 600) {
     $('.toast').toast('hide');
 }
 
-ScrollReveal().reveal('.reveal1');
-ScrollReveal().reveal('.reveal2', {
+ScrollReveal().reveal('.reveal1', {
     delay: 500
+});
+ScrollReveal().reveal('.reveal2', {
+    delay: 1000
 });
 
 $(document).ready(function () {
@@ -38,5 +40,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#btnLogin").click(() => {
         location.href = "login.html";
+    });
+    $("#menubtn").click(() => {
+        location.href = "menu.html";
+    });
+    $("#bookingbtn").click(() => {
+        location.href = "reservasi.html";
+    });
+    $("#locationbtn").click(() => {
+        location.href = "lokasi.html";
     });
 });

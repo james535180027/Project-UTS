@@ -1,5 +1,7 @@
 * {
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -7,7 +9,7 @@
 .jumbotron {
   background-image: url(../img/jumboimg.jpg);
   background-size: cover;
-  height: 500px;
+  height: 700px;
   position: relative;
 }
 
@@ -26,6 +28,47 @@
   position: relative;
 }
 
+.sejarah,
+.reservasi,
+.lokasi {
+  display: flex;
+  width: 80%;
+  margin: 10% auto;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.heading {
+  display: block;
+  margin-top: 10%;
+  padding-bottom: 50px;
+}
+
+.daftarMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.fullMenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fullMenu button {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.btnReservasi,
+.btnLokasi {
+  width: 150px;
+  border-radius: 5px;
+}
 
 .promoCard {
   display: flex;
@@ -43,4 +86,35 @@
 
 .row {
   justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}
+
+.logo {
+  font-family: "red rose";
+  text-align: center;
+  color: red;
+  display: block;
+}
+
+@media screen and (max-width:576px) {
+  .jumbotron {
+    background-position-x: 50%;
+  }
+
+  .sejarah .textSejarah {
+    order: 2;
+  }
+
+  .sejarah .gambarSejarah {
+    order: 1;
+  }
+
 }
