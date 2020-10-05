@@ -51,41 +51,93 @@
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-1 judul-contact-us">Hubungi Kami</h1>
+      <h1 class="display-1 judul-contact-us lead">Hubungi Kami</h1>
       <p class="lead">
         Kami siap membantu anda kapanpun, dimanapun. <br /> <br />
-      </p>
-      <p class="lead">
-        Grogol, Jakarta Barat <br />
-        help@caffetaria.co.id<br />
-        Hotline (0812) 3333 4444 <br />
       </p>
     </div>
   </div>
   <!-- akhir Jumbotron -->
 
   <!-- Bagian contact online -->
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Nama</label>
-        <input type="name" class="form-control" id="exampleInputNama" aria-describedby="nameHelp"
-          placeholder="Masukkan nama" />
+  <div class="container padding-kontak">
+    <div class="row">
+      <div class="col">
+        <p class="lead text-center">
+          <b>Grogol, Jakarta Barat</b><br />
+          <img src="img/mail.svg">
+          help@caffetaria.co.id<br />
+          <img src="img/phone-call.svg">
+          (0812) 3333 4444 <br />
+        </p>
+        <br />
+        <img src="img/contactus-1.png" class="img-fluid thumbnail-kontak">
       </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Alamat Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
-          placeholder="Masukkan email" />
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Pesan</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan pesan"></textarea>
-      </div>
-      <div class="form-group padding-button">
-        <button type="button" class="btn btn-primary">Primary</button>
-      </div>
-    </form>
+      <div class="col form-kontak">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nama</label>
+            <input type="name" class="form-control" id="exampleInputNama" aria-describedby="nameHelp"
+              placeholder="Masukkan nama" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Alamat Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+              placeholder="Masukkan email" />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Pesan</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan pesan"></textarea>
+          </div>
+          <br /><br />
+          <div class="form-group padding-button">
+            <button type="button" class="btn btn-primary btn-lg animated animatedFadeInUp fadeInUp"
+            data-toggle="modal" data-target="#notif">
+            Submit
+            </button>
+          </div>
+        </form>
+      </div>  
+    </div>
   </div>
+
+  <!-- bagian modal untuk notif -->
+  <div class="modal fade"
+       id="notif"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Selamat!</h5>
+          <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          >
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Anda telah berhasil mengirim pesan. Mohon tunggu balasan kami
+           melalui email personal!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal">
+          OK
+        </button>
+      </div> 
+      </div>
+    </div>
+  </div>
+  <!-- akhir bagian modal untuk notif -->
   <!-- akhir Bagian contact online -->
 
 

@@ -78,9 +78,22 @@
 /*padding button submit*/
 .padding-button{
   margin-bottom: 40px;
+  text-align: right;
 }
 /*akhir padding button*/
 
+/*padding content kontak*/
+.padding-kontak{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+/*akhir padding content kontak*/
+
+/*padding form kontak*/
+.form-kontak{
+  margin-left: 10px;
+}
+/*akhir padding form kontak*/
 /*===================================================================================================*/
 
 /* footer dan media screen */
