@@ -58,15 +58,15 @@
   <!-- Menu -->
   <div class="accordion" id="accordionExample">
     <div class="mcontainer hmenu">
-      <button type="button" data-toggle="collapse" href=".makanan" role="button" aria-expanded="false"
-        aria-controls="makanan" class="btn btn-lg">Makanan</button>
-      <button type="button" data-toggle="collapse" href=".minuman" role="button" aria-expanded="false"
-        aria-controls="minuman" class="btn btn-lg">Minuman</button>
-      <button type="button" data-toggle="collapse" href=".penutup" role="button" aria-expanded="false"
-        aria-controls="penutup" class="btn btn-lg">Dessert</button>
+      <button type="button" data-toggle="collapse" href="#mak" role="button" aria-expanded="false"
+        aria-controls="makanan" class="shadow-none btn btn-lg">Makanan</button>
+      <button type="button" data-toggle="collapse" href="#min" role="button" aria-expanded="false"
+        aria-controls="minuman" class="shadow-none btn btn-lg">Minuman</button>
+      <button type="button" data-toggle="collapse" href="#pen" role="button" aria-expanded="false"
+        aria-controls="penutup" class="shadow-none btn btn-lg">Dessert</button>
     </div>
 
-    <div class="mcontainer makanan show" data-parent="#accordionExample">
+    <div class="mcontainer makanan" id="mak" data-parent="#accordionExample">
       <div class="row food">
         <div class="col-sm">
           <img src="img/menu/food1.jpg" alt="">
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="mcontainer minuman collapse" data-parent="#accordionExample">
+    <div class="mcontainer minuman collapse" id="min" data-parent="#accordionExample">
       <div class="row drink">
         <div class="col-sm">
           <img src="img/menu/drink1.jpg" alt="">
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <div class="mcontainer penutup collapse" data-parent="#accordionExample">
+    <div class="mcontainer penutup collapse" id="pen" data-parent="#accordionExample">
       <div class="row drink">
         <div class="col-sm">
           <img src="img/menu/dessert1.jpg" alt="">

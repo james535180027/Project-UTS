@@ -90,6 +90,12 @@
   margin: 50px;
 }
 
+.hmenu button::after,
+button:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .makanan {
   margin: 50px;
   padding: 50px;
