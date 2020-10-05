@@ -108,16 +108,19 @@ button:active {
 }
 
 .makanan {
+  text-align: center;
   margin: 50px;
   padding: 50px;
 }
 
 .minuman {
+  text-align: center;
   margin: 50px;
   padding: 50px;
 }
 
 .penutup {
+  text-align: center;
   margin: 50px;
   padding: 50px;
 }
