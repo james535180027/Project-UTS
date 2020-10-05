@@ -87,13 +87,24 @@
 .hmenu button {
   font-size: 50px;
   font-family: sans-serif;
-  margin: 50px;
+  margin: 25px;
 }
 
 .hmenu button::after,
 button:active {
   outline: none !important;
   box-shadow: none;
+}
+
+.hmenu button:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #0b63DC;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
 }
 
 .makanan {
