@@ -110,25 +110,26 @@ button:active {
 .makanan {
   text-align: center;
   margin: 50px;
-  padding: 50px;
 }
 
 .minuman {
   text-align: center;
   margin: 50px;
-  padding: 50px;
 }
 
 .penutup {
   text-align: center;
   margin: 50px;
-  padding: 50px;
+}
+
+#mak {
+  margin: 50px;
 }
 
 img {
   width: 250px;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Akhir Body Menu Makanan */
