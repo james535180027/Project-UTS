@@ -81,7 +81,7 @@
 }
 
 .hmenu {
-  margin: 50px;
+  margin: 10px;
 }
 
 .hmenu button {
@@ -107,26 +107,27 @@ button:active {
   margin-bottom: -8px;
 }
 
+.show {
+  background-color: blanchedalmond;
+}
+
 .makanan {
   text-align: center;
-  margin: 50px;
+  margin: 0px 10px 10px 10px;
 }
 
 .minuman {
   text-align: center;
-  margin: 50px;
+  margin: 0px 10px 10px 10px;
 }
 
 .penutup {
   text-align: center;
-  margin: 50px;
-}
-
-#mak {
-  margin: 50px;
+  margin: 0px 10px 10px 10px;
 }
 
 img {
+  margin: 50px 50px 10px 50px;
   width: 250px;
   height: 250px;
   border-radius: 5px;
