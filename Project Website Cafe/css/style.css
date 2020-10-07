@@ -1,0 +1,803 @@
+* {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar-brand {
+  font-family: satisfy;
+  font-size: 32px;
+  color: red !important;
+}
+
+.navbar-nav .active {
+  font-family: "red rose";
+  font-size: 18px;
+  color: #e57b30 !important;
+}
+
+.nav-link {
+  font-family: "red rose";
+  font-size: 18px;
+  color: #4f4f4f !important;
+}
+
+.nav-link:hover {
+  font-family: "red rose";
+  font-size: 18px;
+  color: #e57b30 !important;
+}
+
+#btnLogin {
+  width: 90px;
+}
+/* akhir navbar */
+
+
+
+/* style index */
+.jumbotron-home {
+  background-image: url(../img/jumboimg.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+
+.jumbotron-home:hover {
+  background-image: url(../img/jumbotron.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+}
+
+.jumbotron-home::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron-home .container {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.sejarah,
+.reservasi,
+.lokasi {
+  display: flex;
+  width: 80%;
+  margin: 10% auto;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.heading {
+  display: block;
+  margin-top: 10%;
+  padding-bottom: 50px;
+}
+
+.daftarMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.fullMenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fullMenu button {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.btnReservasi,
+.btnLokasi {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}
+
+.logo {
+  font-family: "red rose";
+  text-align: center;
+  color: red;
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    background-position-x: 50%;
+    height: 500px;
+  }
+
+  .listMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listMenu .col {
+    margin-top: 5%;
+  }
+
+  .sejarah .textSejarah,
+  .lokasi .textLokasi {
+    order: 2;
+  }
+
+  .sejarah .gambarSejarah,
+  .lokasi .gambarlokasi {
+    order: 1;
+  }
+
+  #bookingbtn,
+  #locationbtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.container-promo {
+  background-color: #dbb388;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.find-us {
+  font-weight: 400;
+}
+/* akhir style index */
+
+
+/* style lokasi */
+.container-fasilitas {
+  background-color: #7cc3d1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jumbotron-lokasi {
+  background-image: url(../img/jumbotron-lokasi.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  color: white;
+}
+
+.jumbotron-lokasi::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron-lokasi > .container > p {
+  margin-top: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.textmaps{
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20x 20px;
+} 
+
+.text {
+  display:inline-block;
+}
+
+#clickbtn {
+  text-align: center;
+}
+
+
+.locationscroll {
+  margin-top: 80px;
+}
+
+.locationscroll h3 {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.locationscroll p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #D23520;
+}
+
+#deskripsi {
+  margin-left: 10%;
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+/* akhir style lokasi */
+
+
+
+/* style menu */
+.menu {
+  background-image: url(../img/jumbotron-menu.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.menu > .container > p {
+  margin-top: 50px;
+}
+
+.menu .container {
+  color: #762014;
+  z-index: 1;
+  position: relative;
+}
+
+.menu::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.petunjuk-menu {
+  font-weight: 400;
+  text-align: center;
+}
+
+.mcontainer {
+  text-align: center;
+}
+
+.deskripsi-menu {
+  text-align: center;
+}
+
+.hmenu {
+  margin: 10px;
+}
+
+.hmenu button {
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 25px;
+}
+
+.hmenu button::after,
+  button:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.hmenu button:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #E57B30;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+.makanan,
+.minuman,
+.penutup {
+  background-color: #eedd7a;
+  border-radius: 5px;
+}
+
+.makanan {
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  margin-bottom: 70px;
+}
+
+.minuman {
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  margin-bottom: 70px;
+}
+
+.penutup {
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  margin-bottom: 70px;
+}
+
+.gambar-menu {
+  margin: 25px 50px 10px 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.deskripsi-menu {
+  margin: 0px 25px 10px 25px;
+}
+
+/* akhir style menu */
+
+
+
+/* style reservasi */
+.jumbotron-reservasi {
+  background-image: url(../img/jumbotron-reservasi.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  color: white;
+}
+
+.jumbotron-reservasi::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron-reservasi > .container > p {
+  margin-top: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.img-reservasi {
+  margin-top: 20px;
+}
+
+.judul-reservasi {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-reservasi {
+  margin-top: 30px;
+}
+
+.btn-reservasi {
+  float: right;
+  margin-bottom: 40px;
+}
+/* akhir style resercasi */
+
+
+
+/* style kontak */
+.jumbotron-kontak {
+  background-image: url(../img/Coffee.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.jumbotron-kontak > .container > p {
+  margin-top: 50px;
+}
+
+.jumbotron-kontak .container-kontak {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron-kontak::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-us{
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding-button-kontak{
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.padding-kontak{
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.form-kontak{
+  margin-left: 10px;
+}
+/* akhir style kontak */
+
+
+
+/* style login */
+.judul-login {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.card-login {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.form-group-login {
+  padding-bottom: 20px;
+}
+
+.link-registrasi {
+  text-align: center;
+}
+
+.pembatas-form-login {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5); 
+  line-height: 0.1em;
+  margin: 40px 0 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color:  rgba(128, 128, 128, 0.5);
+}
+
+.pembatas-form-login span {
+  background:#fff; 
+  padding:0 10px;
+}
+/* akhir style login */
+
+
+/* style registrasi */
+.judul-registrasi {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.card-registrasi {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.form-group-registrasi {
+  padding-bottom: 20px;
+}
+
+.form-group-checkbox {
+  padding-top: 20px;
+}
+
+.link-login {
+  text-align: center;
+}
+
+.pembatas-form-registrasi {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5); 
+  line-height: 0.1em;
+  margin: 40px 0 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color:  rgba(128, 128, 128, 0.5);
+}
+
+.pembatas-form-registrasi span {
+  background:#fff; 
+  padding:0 10px;
+}
+/* akhir style registrasi */
+
+
+
+
+/* footer dan media screen */
+@media screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #deskripsi-opening {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
