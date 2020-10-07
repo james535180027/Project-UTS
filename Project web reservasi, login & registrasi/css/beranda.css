@@ -1,16 +1,24 @@
+/* Homepage */
 * {
   max-width: 100%;
   margin: 0;
   padding: 0;
 }
 
-
 /* Jumbotron */
 .jumbotron {
   background-image: url(../img/jumboimg.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
   background-size: cover;
   height: 700px;
   position: relative;
+}
+
+.jumbotron:hover {
+  background-image: url(../img/jumbotron.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
 }
 
 .jumbotron::after {
@@ -104,17 +112,38 @@
   display: block;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .jumbotron {
     background-position-x: 50%;
   }
 
-  .sejarah .textSejarah {
+  .listMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listMenu .col {
+    margin-top: 5%;
+  }
+
+  .sejarah .textSejarah,
+  .lokasi .textLokasi {
     order: 2;
   }
 
-  .sejarah .gambarSejarah {
+  .sejarah .gambarSejarah,
+  .lokasi .gambarlokasi {
     order: 1;
   }
 
+  #bookingbtn,
+  #locationbtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

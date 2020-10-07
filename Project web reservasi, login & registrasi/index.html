@@ -1,255 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!--Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- My Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/beranda.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/reservasi.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/coffee.svg" />
-    <title>Coffeeteria</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
 
-  <body id="bagian-home">
-    <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Coffeeteria</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#bagian-home"
-              >Beranda<span class="sr-only">(current)</span></a
-            >
-            <a class="nav-link" href="menu.html">Menu</a>
-            <a class="nav-link" href="reservasi.html">Reservasi</a>
-            <a class="nav-link" href="lokasi.html">Lokasi</a>
-            <a class="nav-link" href="kontak.html">Kontak</a>
-            <button class="btn btn-danger rounded-pill" id="btnLogin">
-              Login
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- akhir Navbar -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!--Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- My Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/beranda.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/reservasi.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/coffee.svg" />
+  <title>Coffeeteria</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container"></div>
-    </div>
-    <!-- akhir Jumbotron -->
-
-    <!-- Sejarah -->
-    <div class="row sejarah">
-      <div class="col textSejarah reveal1">
-        <p class="text-justify">
-          Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
-          dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
-          semua ini dimulai dari pengambilan mata kuliah web programming
-        </p>
-      </div>
-      <div class="col gambarSejarah">
-        <img src="img/previewcafe.jpg" alt="" class="img-fluid" />
-      </div>
-    </div>
-    <!-- Akhir bagian sejarah -->
-
-    <!-- Menu -->
+<body id="bagian-home">
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <h1 class="heading">MENU</h1>
-      <div class="row daftarMenu">
-        <!-- Menu 1 -->
-        <div class="col cardMenu">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="img/menu/Black Coffee.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Black Coffee</h5>
-            </div>
-          </div>
+      <a class="navbar-brand" href="#">Coffeeteria</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active" href="#bagian-home">Beranda<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link" href="reservasi.html">Reservasi</a>
+          <a class="nav-link" href="lokasi.html">Lokasi</a>
+          <a class="nav-link" href="kontak.html">Kontak</a>
+          <button class="btn btn-danger rounded-pill" id="btnLogin">
+            Login
+          </button>
         </div>
-        <!-- Akhir Menu 1 -->
-        <!-- Menu 2 -->
-        <div class="col cardMenu">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="img/menu/Brown Cupcake.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Brown Cupcake</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Akhir Menu 2 -->
-        <!-- Menu 3 -->
-        <div class="col cardMenu">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="img/menu/Iced Lemonade.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Iced Lemonade</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Akhir Menu 3 -->
-      </div>
-      <div class="row fullMenu">
-        <button class="btn-danger" id="menubtn">ALL MENU</button>
       </div>
     </div>
-    <!-- Akhir bagian Menu -->
+  </nav>
+  <!-- akhir Navbar -->
 
-    <!-- Reservasi -->
-    <div class="row reservasi">
-      <div class="col gambarReservasi">
-        <img src="img/previewcafe.jpg" alt="" class="img-fluid" />
-      </div>
-      <div class="col textReservasi reveal1">
-        <p class="text-justify">
-          Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
-          dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
-          semua ini dimulai dari pengambilan mata kuliah web programming
-        </p>
-        <button class="btn-danger btnReservasi" id="bookingbtn">
-          RESERVASI
-        </button>
-      </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+  </div>
+  <!-- akhir Jumbotron -->
+
+  <!-- Sejarah -->
+  <div class="row sejarah">
+    <div class="col textSejarah reveal2">
+      <p class="text-justify">
+        Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
+        dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
+        semua ini dimulai dari pengambilan mata kuliah web programming
+      </p>
     </div>
-    <!-- Akhir bagian Reservasi -->
-
-    <!-- Lokasi -->
-    <div class="row lokasi">
-      <div class="col textLokasi reveal1">
-        <p class="text-justify">
-          Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
-          dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
-          semua ini dimulai dari pengambilan mata kuliah web programming
-        </p>
-        <button class="btn-danger btnLokasi" id="locationbtn">LOKASI</button>
-      </div>
-      <div class="col gambarlokasi">
-        <img src="img/lokasiCafe.jpg" alt="" class="img-fluid" />
-      </div>
+    <div class="col gambarSejarah reveal1">
+      <img src="img/previewcafe.jpg" alt="" class="img-fluid" />
     </div>
-    <!-- Akhir Lokasi -->
+  </div>
+  <!-- Akhir bagian sejarah -->
 
-    <!-- Contact -->
-    <div class="container-fluid contact">
-      <h1 class="logo"><em>Coffeeteria</em></h1>
-      <h2>FIND US ON INSTAGRAM</h2>
-    </div>
-
-    <!-- Footer -->
-    <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-              Caffetaria provides you the best coffee menus. Find Your
-              Inspiration, Brighten your day, live your ideas, Actualize Your
-              Plans.
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <h6>Location</h6>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.252941634577!2d106.79138638801619!3d-6.168091001682152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sUniversitas%20Tarumanagara%20Kampus%20I!5e0!3m2!1sid!2sid!4v1601164780820!5m2!1sid!2sid"
-              width="250"
-              height="250"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-          <div class="col-xs-5 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="#bagian-home">Back To Top</a></li>
-              <li><a href="#biji-kopi">Biji Kopi</a></li>
-              <li><a href="#reservasi">Reservasi</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#promo">Promo</a></li>
-              <li><a href="#">Lowongan</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <hr />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Web Programming 2020</p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li>
-                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a class="linkedin" href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
+  <!-- Menu -->
+  <div class="container listMenu reveal1">
+    <h1 class="heading">MENU</h1>
+    <div class="row daftarMenu">
+      <!-- Menu 1 -->
+      <div class="col cardMenu reveal2">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="img/menu/Black Coffee.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Black Coffee</h5>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- akhir footer -->
+      <!-- Akhir Menu 1 -->
+      <!-- Menu 2 -->
+      <div class="col cardMenu reveal2">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="img/menu/Brown Cupcake.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Brown Cupcake</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Menu 2 -->
+      <!-- Menu 3 -->
+      <div class="col cardMenu reveal2">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="img/menu/Iced Lemonade.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Iced Lemonade</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Menu 3 -->
+    </div>
+    <div class="row fullMenu">
+      <button class="btn-danger" id="menubtn">ALL MENU</button>
+    </div>
+  </div>
+  <!-- Akhir bagian Menu -->
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Reservasi -->
+  <div class="row reservasi">
+    <div class="col gambarReservasi reveal1">
+      <img src="img/previewcafe.jpg" alt="" class="img-fluid" />
+    </div>
+    <div class="col textReservasi reveal2">
+      <p class="text-justify">
+        Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
+        dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
+        semua ini dimulai dari pengambilan mata kuliah web programming
+      </p>
+      <button class="btn-danger btnReservasi" id="bookingbtn">
+        RESERVASI
+      </button>
+    </div>
+  </div>
+  <!-- Akhir bagian Reservasi -->
+
+  <!-- Lokasi -->
+  <div class="row lokasi">
+    <div class="col textLokasi reveal2">
+      <p class="text-justify">
+        Coffeeteria dibentuk sejak Oktober 2020 , ide pembuatan web cafe
+        dengan sistem reservasi ini datang dari berbagai inspirasi yang ada,
+        semua ini dimulai dari pengambilan mata kuliah web programming
+      </p>
+      <button class="btn-danger btnLokasi" id="locationbtn">LOKASI</button>
+    </div>
+    <div class="col gambarlokasi reveal1">
+      <img src="img/lokasiCafe.jpg" alt="" class="img-fluid" />
+    </div>
+  </div>
+  <!-- Akhir Lokasi -->
+
+  <!-- Contact -->
+  <div class="container-fluid contact">
+    <h1 class="logo"><em>Coffeeteria</em></h1>
+    <h2>FIND US ON INSTAGRAM</h2>
+  </div>
+
+  <!-- Footer -->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">
+            Caffetaria provides you the best coffee menus. Find Your
+            Inspiration, Brighten your day, live your ideas, Actualize Your
+            Plans.
+          </p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Location</h6>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.252941634577!2d106.79138638801619!3d-6.168091001682152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sUniversitas%20Tarumanagara%20Kampus%20I!5e0!3m2!1sid!2sid!4v1601164780820!5m2!1sid!2sid"
+            width="250" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-xs-5 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#bagian-home">Back To Top</a></li>
+            <li><a href="#biji-kopi">Biji Kopi</a></li>
+            <li><a href="#reservasi">Reservasi</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#">Lowongan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Web Programming 2020</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="linkedin" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- akhir footer -->
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
