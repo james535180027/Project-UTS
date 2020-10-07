@@ -115,6 +115,7 @@
 @media screen and (max-width: 576px) {
   .jumbotron {
     background-position-x: 50%;
+    height: 500px;
   }
 
   .listMenu {
