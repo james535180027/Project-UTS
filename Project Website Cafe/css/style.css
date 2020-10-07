@@ -111,7 +111,9 @@ button:active {
 
 /* Collapse Menu Setiap Kategori */
 
-.show {
+.makanan,
+.minuman,
+.penutup {
   background-color: blanchedalmond;
   border-radius: 5px;
 }
@@ -172,6 +174,16 @@ img {
     text-align: center;
     margin-left: 0;
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 12.5px;
+  }
+
+  /* End Menu Part */
 }
 
 .site-footer {
@@ -254,6 +266,16 @@ img {
   .site-footer [class^=col-] {
     margin-bottom: 30px
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 45px;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  /* End Menu Part */
 }
 
 @media (max-width:767px) {
@@ -265,6 +287,16 @@ img {
   .site-footer .social-icons {
     text-align: center
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 37.5px;
+    font-family: sans-serif;
+    margin: 18.5px;
+  }
+
+  /* End Menu Part */
 }
 
 .social-icons {
