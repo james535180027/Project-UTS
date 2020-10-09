@@ -39,6 +39,38 @@
 
 
 /* style reservasi */
+.jumbotron-kontak {
+  background-image: url(../img/Coffee.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.jumbotron-kontak>.container>p {
+  margin-top: 50px;
+}
+
+.jumbotron-kontak .container-kontak {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron-kontak .container-kontak {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron-kontak::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
 
 /* akhir style resercasi */
 
