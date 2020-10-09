@@ -2699,7 +2699,8 @@ textarea.form-control {
 
 .custfonts1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  font-size: 50px;
+  text-align: center;
   animation:flipInX .5s ease-in;
 }
 

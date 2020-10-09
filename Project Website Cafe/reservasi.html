@@ -40,13 +40,74 @@
           <a class="nav-link active" href="#">Reservasi<span class="sr-only">(current)</span></a>
           <a class="nav-link" href="lokasi.html">Lokasi</a>
           <a class="nav-link" href="kontak.html">Kontak</a>
-          <button type="button" class="btn btn-danger rounded-pill">Login</button>
+          <button type="button" class="btn btn-danger rounded-pill" id="btnLogin">Login</button>
         </div>
       </div>
     </div>
   </nav>
   <!-- akhir Navbar -->
 
+
+  <div class="jumbotron jumbotron-fluid jumbotron-reservasi">
+    <div class="container">
+      <p class="custfonts1">Reservasi</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <img src="img/reservasi.svg" class="img-fluid img-reservasi"/>
+      </div>
+      <div class="col">
+        <h3 class="animated animatedFadeInUp fadeInUp judul-reservasi">
+          Reservasi Kunjunganmu Sekarang
+        </h3>
+
+        <!-- form reservasi -->
+        <form class="form-reservasi">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nama</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Alamat Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nomor Telepon</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0812345678910">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Jumlah Orang</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>Pilih jumlah orang yang akan berkunjung</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>>6</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Waktu Reservasi</label>
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="exampleInputTanggal"
+              aria-describedby="datetimeHelp"
+              placeholder=""
+            />
+          </div>
+          <button type="submit" class="btn btn-danger btn-reservasi">Submit</button>
+        </form>
+        <!-- akhir form reservasi -->
+      </div>
+    </div>
+  </div>
   
   
 
@@ -72,11 +133,11 @@
             <h6>Quick Links</h6>
             <ul class="footer-links">
               <li><a href="#bagian-home">Back To Top</a></li>
-              <li><a href="#biji-kopi">Biji Kopi</a></li>
-              <li><a href="#reservasi">Reservasi</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#promo">Promo</a></li>
-              <li><a href="#">Lowongan</a></li>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservasi.html">Reservasi</a></li>
+              <li><a href="lokasi.html">Lokasi</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
             </ul>
           </div>
         </div>

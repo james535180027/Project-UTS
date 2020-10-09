@@ -33,3 +33,19 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+
+$(document).ready(function () {
+    $("#btnLogin").click(() => {
+        location.href = "login.html";
+    });
+    $("#menubtn").click(() => {
+        location.href = "menu.html";
+    });
+    $("#bookingbtn").click(() => {
+        location.href = "reservasi.html";
+    });
+    $("#locationbtn").click(() => {
+        location.href = "lokasi.html";
+    });
+});
