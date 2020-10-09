@@ -38,7 +38,144 @@
 
 
 /* style index */
+.jumbotron-home {
+  background-image: url(../img/jumboimg.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
 
+.jumbotron-home:hover {
+  background-image: url(../img/jumbotron.jpg);
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+}
+
+.jumbotron-home::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron-home .container {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.sejarah,
+.reservasi,
+.lokasi {
+  display: flex;
+  width: 80%;
+  margin: 10% auto;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.heading {
+  display: block;
+  margin-top: 10%;
+  padding-bottom: 50px;
+}
+
+.daftarMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.fullMenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fullMenu button {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.btnReservasi,
+.btnLokasi {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}
+
+.logo {
+  font-family: "red rose";
+  text-align: center;
+  color: red;
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    background-position-x: 50%;
+    height: 500px;
+  }
+
+  .listMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listMenu .col {
+    margin-top: 5%;
+  }
+
+  .sejarah .textSejarah,
+  .lokasi .textLokasi {
+    order: 2;
+  }
+
+  .sejarah .gambarSejarah,
+  .lokasi .gambarlokasi {
+    order: 1;
+  }
+
+  #bookingbtn,
+  #locationbtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.container-promo {
+  background-color: #dbb388;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.find-us {
+  font-weight: 400;
+}
 
 /* akhir style index */
 
