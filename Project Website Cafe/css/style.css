@@ -47,7 +47,8 @@
 /* style kontak */
 .style-judul{
   font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-size: 100px;
+  color: crimson;
   animation:flipInX .5s ease-in;
 }
 
