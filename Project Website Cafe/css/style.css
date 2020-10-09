@@ -45,6 +45,12 @@
 
 
 /* style kontak */
+.style-judul{
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  animation:flipInX .5s ease-in;
+}
+
 .jumbotron-kontak {
   background-image: url(../img/Coffee.jpg);
   background-size: cover;
