@@ -1,8 +1,10 @@
+/*Mengganggu Dibagian Responsive Page Menu*/
+/*
 * {
   max-width: 100%;
   margin: 0;
   padding: 0;
-}
+}*/
 
 /* navbar */
 .navbar-brand {
@@ -34,7 +36,6 @@
 }
 
 /* akhir navbar */
-
 
 
 /* style index */
@@ -299,7 +300,6 @@ button:active {
 }
 
 .deskripsi-menu {
-  text-align: center;
   margin: 0px 25px 10px 25px;
 }
 
