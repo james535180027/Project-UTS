@@ -165,6 +165,23 @@
     align-items: center;
     text-align: center;
   }
+
+  /* Bagian Menu */
+  .makanan {
+    text-align: center;
+    margin: 0px auto 10px auto;
+  }
+
+  .minuman {
+    text-align: center;
+    margin: 0px auto 10px auto;
+  }
+
+  .penutup {
+    text-align: center;
+    margin: 0px auto 10px auto;
+  }
+
 }
 
 .container-promo {
@@ -268,19 +285,16 @@ button:active {
 .makanan {
   text-align: center;
   margin: 0px 10px 10px 10px;
-  margin-bottom: 70px;
 }
 
 .minuman {
   text-align: center;
   margin: 0px 10px 10px 10px;
-  margin-bottom: 70px;
 }
 
 .penutup {
   text-align: center;
   margin: 0px 10px 10px 10px;
-  margin-bottom: 70px;
 }
 
 /* Animation */
@@ -306,7 +320,6 @@ button:active {
 }
 
 /* akhir style menu */
-
 
 
 /* style reservasi */
@@ -499,8 +512,6 @@ button:active {
 /* akhir style registrasi */
 
 
-
-
 /* footer dan media screen */
 @media screen and (max-width: 600px) {
   .row {
@@ -513,6 +524,16 @@ button:active {
     text-align: center;
     margin-left: 0;
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 12.5px;
+  }
+
+  /* End Menu Part */
 }
 
 .site-footer {
@@ -595,6 +616,16 @@ button:active {
   .site-footer [class^=col-] {
     margin-bottom: 30px
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 45px;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  /* End Menu Part */
 }
 
 @media (max-width:767px) {
@@ -606,6 +637,16 @@ button:active {
   .site-footer .social-icons {
     text-align: center
   }
+
+  /* Menu Part */
+
+  .hmenu button {
+    font-size: 37.5px;
+    font-family: sans-serif;
+    margin: 18.5px;
+  }
+
+  /* End Menu Part */
 }
 
 .social-icons {
