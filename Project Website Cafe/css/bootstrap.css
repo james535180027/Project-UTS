@@ -2698,10 +2698,16 @@ textarea.form-control {
 }
 
 .custfonts1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 50px;
-  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
   animation:flipInX .5s ease-in;
+  text-decoration: underline;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  left: 50px;
+  padding-bottom: 75px;
 }
 
 .btn {
