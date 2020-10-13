@@ -180,6 +180,12 @@
 
 /* style lokasi */
 
+#decor {
+  text-decoration: underline;
+  text-decoration-color: lightcoral;
+  text-underline-position: under;
+}
+
 .container-bg {
   background-color: #c8d6e5;
   padding-top: 20px;
