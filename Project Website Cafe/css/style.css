@@ -186,6 +186,12 @@
   text-underline-position: under;
 }
 
+#decor2 {
+  text-decoration: underline;
+  text-decoration-color: lightslategray;
+  text-underline-position: under;
+}
+
 .container-bg {
   background-color: #c8d6e5;
   padding-top: 20px;
