@@ -48,4 +48,18 @@ $(document).ready(function () {
     $("#locationbtn").click(() => {
         location.href = "lokasi.html";
     });
+    $("#cekLogin").click(()=>{
+        uName = $("#exampleInputEmail1").val();
+        uPw = $("#exampleInputPassword1").val();
+        if(uName == 'admin' && uPw == 'admin'){
+            location.href = 'admin_view.html';
+        }else{
+            location.href = 'contoh-setelah-login.html';
+        }
+    });
+    $("#btnLogout").click(()=>{
+        if(confirm("Yakin Logout ?")){
+            location.href = 'index.html';
+        }
+    });
 });

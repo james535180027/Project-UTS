@@ -15,15 +15,14 @@
   <!-- My Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
   <!-- My CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" type="image/x-icon" href="img/coffee.svg" />
   <title>Coffeeteria</title>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <!--<script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js" data-auto-replace-svg="nest"></script>-->
+  <script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js" data-auto-replace-svg="nest"></script>
 
 </head>
 
@@ -38,23 +37,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="#">Beranda</a>
+          <a class="nav-link" href="index.html">Beranda</a>
           <a class="nav-link" href="menu.html">Menu</a>
           <a class="nav-link" href="reservasi.html">Reservasi</a>
           <a class="nav-link active" href="#">Lokasi<span class="sr-only">(current)</span></a>
           <a class="nav-link" href="kontak.html">Kontak</a>
-          <button type="button" class="btn btn-danger rounded-pill">Login</button>
+          <button type="button" class="btn btn-danger rounded-pill" id="btnLogin"">Login</button>
         </div>
       </div>
     </div>
   </nav>
   <!-- akhir Navbar -->
+
+
+
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid jumbotron-lokasi">
     <div class="container">
-      <p class="custfonts1">Locations</p>
+      <p class="custfonts1">Lokasi</p>
     </div>
-    <section id="biji-kopi"></section>
   </div>
   <!--end of jumbotron-->
 
@@ -83,9 +84,9 @@
   </div>
   <br><br><br>
   <!-- Layout fitur -->
-  <div class="container-bg">
+  <div class="container-bg container-fasilitas">
     <div class="container">
-      <h2 style="text-align: center; color: grey;" id="decor2">Fasilitas</h2>
+      <h2 style="text-align: center; color: grey;">Fasilitas</h2>
       <br>
       <div class="container">
         <div class="row text-center align-items-center justify-content-center">
@@ -113,15 +114,9 @@
               <figcaption>Music / Live Music</figcaption>
             </figure>
           </div>
-          <div class="col-sm-2">
-            <figure>
-              <img src="img/cafe-site.png" alt="">
-              <figcaption>Indoor/Outdoor Facility</figcaption>
-            </figure>
-          </div>
         </div>
       </div>
-  </div>
+    </div>
   </div>
   <br><br><br>
   <!--embed maps-->
@@ -159,9 +154,9 @@
 
   <!--cafe gallery-->
   <div class="container gallery-container">
-    <h1 id="decor">Galeri Foto</h1>
+    <h1>Galeri Foto</h1>
 
-    <p class="page-description text-center text-primary">Ini adalah galeri kafe kami</p>
+    <p class="page-description text-center">Ini adalah galeri kafe kami</p>
     
     <div class="tz-gallery">
 
@@ -181,7 +176,6 @@
       </div>
     </div>
   </div>
-</br></br>
 
   <!-- Footer -->
       <!-- Site footer -->
@@ -204,11 +198,11 @@
             <h6>Quick Links</h6>
             <ul class="footer-links">
               <li><a href="#bagian-home">Back To Top</a></li>
-              <li><a href="#biji-kopi">Biji Kopi</a></li>
-              <li><a href="#reservasi">Reservasi</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#promo">Promo</a></li>
-              <li><a href="#">Lowongan</a></li>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservasi.html">Reservasi</a></li>
+              <li><a href="lokasi.html">Lokasi</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
             </ul>
           </div>
         </div>
