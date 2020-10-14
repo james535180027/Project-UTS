@@ -62,4 +62,16 @@ $(document).ready(function () {
             location.href = 'index.html';
         }
     });
+    $('table').on('click', '#acc', function(){
+        if(confirm('Konfirmasi Reservasi ?')){
+            $(this).closest('tr').remove();
+            alert('Berhasil Menkonfirmasi');
+        }
+    });
+    $('table').on('click', '#reject', function(){
+        if(confirm('Tolak Reservasi ?')){
+            $(this).closest('tr').remove();
+            window.open("https://www.google.com/gmail/");
+        }      
+    });
 });
