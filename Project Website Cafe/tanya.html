@@ -35,8 +35,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="admin_view.html">Reservasi<span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="tanya.html">Pesan/Pertanyaan</a>
+            <a class="nav-link" href="admin_view.html">Reservasi<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="tanya.html">Pesan/Pertanyaan</a>
           <button type="button" class="btn btn-danger rounded-pill" id="btnLogout">Logout</button>
         </div>
       </div>
@@ -47,20 +47,20 @@
   <!-- bagian view reservasi -->
   <div class="container padding-reservasi">
 
-    <h2 class="judul-admin-view">Daftar Permintaan Reservasi</h2>
+    <h2 class="judul-admin-view">Daftar Pesan/Pertanyaan</h2>
+
+  <!-- bagian view pesan -->
+  <div class="container padding-pesan">
 
     <!-- tabel -->
-    <div class="table-responsive">
+    <div class="table-responsive" id="#bagian-pesan">
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Alamat Email</th>
-                    <th scope="col">Nomor Telepon</th>
-                    <th scope="col">Jumlah Orang</th>
-                    <th scope="col">Waktu</th>
-                    <th scope="col">Konfirmasi</th>
+                    <th scope="col">Pesan</th>
                 </tr>
             </thead>
             <tbody>
@@ -68,45 +68,27 @@
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>mark@email.com</td>
-                    <td>08123456789</td>
-                    <td>2</td>
-                    <td>12/10/2020 12:23</td>
-                    <td>
-                        <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
-                        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" id="reject" title="Tolak reservasi">&#10005;</button>
-                    </td>
+                    <td>Tolong tambahkan jumlah menu.</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>jacob@email.com</td>
-                    <td>08123456789</td>
-                    <td>2</td>
-                    <td>12/10/2020 12:23</td>
-                    <td>
-                        <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
-                        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" id="reject" title="Tolak reservasi">&#10005;</button>
-                    </td>
+                    <td>Tolong tingkatkan kualitas.</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Larry</td>
                     <td>larry@email.com</td>
-                    <td>08123456789</td>
-                    <td>2</td>
-                    <td>12/10/2020 12:23</td>
-                    <td>
-                        <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
-                        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" id="reject" title="Tolak reservasi">&#10005;</button>
-                    </td>
+                    <td>Bagaimana jika tambahkan menu english breakfast?</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <!-- akhir tabel -->
-  </div>
-  <!-- akhir bagian view reservasi -->
-
+  </div> 
+  <!-- akhir bagian view pesan -->
+</div>
   <!-- Footer -->
       <!-- Site footer -->
       <footer class="site-footer">
