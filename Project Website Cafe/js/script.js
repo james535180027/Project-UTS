@@ -65,14 +65,15 @@ $(document).ready(function () {
     $('table').on('click', '#acc', function(){
         if(confirm('Konfirmasi Reservasi ?')){
             $(this).closest('tr').remove();
-            alert('Berhasil Menkonfirmasi');
+            alert('Berhasil Mengonfirmasi');
         }
     });
     $('table').on('click', '#reject', function(){
-        if(confirm('Tolak Reservasi ?')){
+        $('#ModalTolak').modal('toggle'); 
+        $("#btnTolak").click(()=>{
+            $('#ModalTolak').modal('hide');
             $(this).closest('tr').remove();
-            window.open("https://www.google.com/gmail/");
-        }      
+        });
     });
     $('table').on('click', '#reject1', function(){
         if(confirm('Hapus Pesan ?')){

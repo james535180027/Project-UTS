@@ -35,9 +35,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="admin_view.html">Request<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="terima.html">Reservasi</a>
-          <a class="nav-link active" href="tanya.html">Pesan</a>
+          <a class="nav-link" href="admin_view.html">Request<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="terima.html">Reservasi</a>
+          <a class="nav-link" href="tanya.html">Pesan</a>
           <button type="button" class="btn btn-danger rounded-pill" id="btnLogout">Logout</button>
         </div>
       </div>
@@ -45,24 +45,21 @@
   </nav>
   <!-- akhir Navbar -->
 
-  <!-- bagian view reservasi -->
   <div class="container padding-reservasi">
 
-    <h2 class="judul-admin-view">Daftar Pesan/Pertanyaan</h2>
-
-  <!-- bagian view pesan -->
-  <div class="container padding-pesan">
+    <h2 class="judul-admin-view">Daftar Reservasi</h2>
 
     <!-- tabel -->
-    <div class="table-responsive" id="#bagian-pesan">
+    <div class="table-responsive">
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Alamat Email</th>
-                    <th scope="col">Pesan</th>
-                    <th scope="col">Hapus Pesan</th>
+                    <th scope="col">Nomor Telepon</th>
+                    <th scope="col">Jumlah Orang</th>
+                    <th scope="col">Waktu</th>
                 </tr>
             </thead>
             <tbody>
@@ -70,39 +67,33 @@
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>mark@email.com</td>
-                    <td>Tolong tambahkan jumlah menu.</td>
-                    <td>
-                      <button type="button" class="btn btn-danger text-center" data-toggle="tooltip" 
-                      data-placement="bottom" id="reject1" title="Hapus pesan">&#10005;</button>
-                    </td>
+                    <td>08123456789</td>
+                    <td>2</td>
+                    <td>12/10/2020 12:23</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>jacob@email.com</td>
-                    <td>Tolong tingkatkan kualitas.</td>
-                    <td>
-                      <button type="button" class="btn btn-danger text-center" data-toggle="tooltip" 
-                      data-placement="bottom" id="reject1" title="Hapus pesan">&#10005;</button>
-                    </td>
+                    <td>08123456789</td>
+                    <td>2</td>
+                    <td>12/10/2020 12:23</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Larry</td>
                     <td>larry@email.com</td>
-                    <td>Bagaimana jika tambahkan menu english breakfast?</td>
-                    <td>
-                      <button type="button" class="btn btn-danger text-center" data-toggle="tooltip" 
-                      data-placement="bottom" id="reject1" title="Hapus pesan">&#10005;</button>
-                    </td>
+                    <td>08123456789</td>
+                    <td>2</td>
+                    <td>12/10/2020 12:23</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <!-- akhir tabel -->
-  </div> 
-  <!-- akhir bagian view pesan -->
-</div>
+  </div>
+  <!-- akhir bagian view reservasi -->
+
   <!-- Footer -->
       <!-- Site footer -->
       <footer class="site-footer">

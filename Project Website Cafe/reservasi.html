@@ -39,6 +39,7 @@
           <a class="nav-link" href="menu.html">Menu</a>
           <a class="nav-link active" href="#">Reservasi<span class="sr-only">(current)</span></a>
           <a class="nav-link" href="lokasi.html">Lokasi</a>
+          <a class="nav-link" href="gallery.html">Galeri</a>
           <a class="nav-link" href="kontak.html">Kontak</a>
           <button type="button" class="btn btn-danger rounded-pill" id="btnLogin">Login</button>
         </div>
@@ -102,15 +103,50 @@
               placeholder=""
             />
           </div>
-          <button type="submit" class="btn btn-danger btn-reservasi">Submit</button>
+          <button type="button" class="btn btn-danger btn-reservasi" data-toggle="modal" data-target="#notif-reservasi">Submit</button>
         </form>
         <!-- akhir form reservasi -->
       </div>
     </div>
   </div>
-  
-  
 
+  <!-- bagian modal untuk notif -->
+  <div class="modal fade"
+       id="notif-reservasi"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Permintaan reservasi telah terkirim!</h5>
+          <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          >
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Anda telah berhasil mengirimkan permintaan reservasi. Mohon untuk cek email anda untuk melihat status konfirmasi reservasi anda. Terima kasih!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal">
+          OK
+        </button>
+      </div> 
+      </div>
+    </div>
+  </div>
+  <!-- akhir bagian modal untuk notif -->
+  
 
   <!-- Footer -->
       <!-- Site footer -->
@@ -137,6 +173,7 @@
               <li><a href="menu.html">Menu</a></li>
               <li><a href="reservasi.html">Reservasi</a></li>
               <li><a href="lokasi.html">Lokasi</a></li>
+              <li><a href="gallery.html">Galeri</a></li>
               <li><a href="kontak.html">Kontak</a></li>
             </ul>
           </div>
