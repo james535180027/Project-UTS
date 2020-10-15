@@ -74,6 +74,11 @@ $(document).ready(function () {
             window.open("https://www.google.com/gmail/");
         }      
     });
+    $('table').on('click', '#reject1', function(){
+        if(confirm('Hapus Pesan ?')){
+            $(this).closest('tr').remove();
+        }      
+    });
     $('#register').click(()=>{
         if($('#exampleInputPassword1').val() != $('#exampleInputPassword2').val()){
             alert('Password dan Konfirmasi Password berbeda');
