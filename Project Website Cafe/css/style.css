@@ -831,3 +831,13 @@ button:active {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+.padding-reservasi{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.padding-pesan{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
