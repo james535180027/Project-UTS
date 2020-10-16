@@ -48,6 +48,12 @@ $(document).ready(function () {
     $("#locationbtn").click(() => {
         location.href = "lokasi.html";
     });
+    $("#galeribtn").click(() => {
+        location.href = "gallery.html";
+    });
+    $("#kontakbtn").click(() => {
+        location.href = "kontak.html";
+    });
     $("#cekLogin").click(()=>{
         uName = $("#exampleInputEmail1").val();
         uPw = $("#exampleInputPassword1").val();

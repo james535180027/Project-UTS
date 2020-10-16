@@ -70,7 +70,9 @@
 
 .sejarah,
 .reservasi,
-.lokasi {
+.lokasi,
+.kontak,
+.galeri {
   display: flex;
   width: 80%;
   margin: 10% auto;
@@ -105,7 +107,9 @@
 }
 
 .btnReservasi,
-.btnLokasi {
+.btnLokasi,
+.btnGaleri,
+.btnKontak {
   width: 150px;
   border-radius: 5px;
 }
@@ -148,17 +152,21 @@
   }
 
   .sejarah .textSejarah,
-  .lokasi .textLokasi {
+  .lokasi .textLokasi,
+  .kontak .textKontak {
     order: 2;
   }
 
   .sejarah .gambarSejarah,
-  .lokasi .gambarlokasi {
+  .lokasi .gambarlokasi,
+  .kontak .gambarKontak {
     order: 1;
   }
 
   #bookingbtn,
-  #locationbtn {
+  #locationbtn,
+  #galeribtn,
+  #kontakbtn {
     display: flex;
     width: 100%;
     justify-content: center;
