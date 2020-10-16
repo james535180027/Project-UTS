@@ -87,4 +87,11 @@ $(document).ready(function () {
             location.href = 'login.html';
         }
     })
+    $('#gantiPass').click(()=>{
+        if($('#exampleInputPassword1').val() != $('#exampleInputPassword2').val()){
+            alert('Password dan Konfirmasi Password berbeda');
+        }else{
+            location.href = 'pengaturan.html';
+        }
+    })
 });
