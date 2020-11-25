@@ -1,0 +1,41 @@
+
+  <div class="container padding-reservasi">
+
+    <h2 class="judul-admin-view">Daftar Reservasi</h2>
+
+    <!-- tabel -->
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Alamat Email</th>
+                    <th scope="col">Nomor Telepon</th>
+                    <th scope="col">Jumlah Orang</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Noted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%= i=1; %> 
+                <% booking.forEach(function(booked){ %> 
+              <tr id="barisData">
+                <th> <%= i++; %>  </th>
+                <td> <%= booked.nama %>  </td>
+                <td> <%= booked.email %>  </td>
+                <td> <%= booked.no_telp %>  </td>
+                <td> <%= booked.pengunjung %> </td>
+                <td> <%= booked.waktu %></td>
+                <td>
+                    <a class="btn btn-success" href="/pesanan-diterima/<%= bookr.id  %> " data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
+                    <a class="btn btn-danger"  data-toggle="tooltip" data-placement="bottom" id="reject" title="Tolak reservasi">&#10005;</button>
+                </td>
+              </tr>
+            <% }); %> 
+            </tbody>
+        </table>
+    </div>
+    <!-- akhir tabel -->
+  </div>
+  <!-- akhir bagian view reservasi -->

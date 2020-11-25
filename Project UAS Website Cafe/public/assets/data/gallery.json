@@ -1,0 +1,42 @@
+[
+  {
+    "nama": "Cafe Interior 1",
+    "gambar": "cafeinterior1.jpg"
+  },
+  {
+    "nama": "Cafe Interior 2",
+    "gambar": "cafeinterior2.jpg"
+  },
+  {
+    "nama": "Cafe atmosphere",
+    "gambar": "cafeatmosphere.jpeg"
+  },
+  {
+    "nama": "Dessert 1",
+    "gambar": "menu/dessert1.jpg"
+  },
+  {
+    "nama": "Dessert 2",
+    "gambar": "menu/dessert2.jpg"
+  },
+  {
+    "nama": "Drink 1",
+    "gambar": "menu/drink1.jpg"
+  },
+  {
+    "nama": "Drink 2",
+    "gambar": "menu/drink2.jpg"
+  },
+  {
+    "nama": "Food 1",
+    "gambar": "menu/food1.jpg"
+  },
+  {
+    "nama": "Food 2",
+    "gambar": "menu/food2.jpg"
+  },
+  {
+    "nama": "Ice Lemonade",
+    "gambar": "menu/Iced Lemonade.jpg"
+  }
+]

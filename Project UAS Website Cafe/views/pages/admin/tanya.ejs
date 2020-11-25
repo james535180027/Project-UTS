@@ -1,0 +1,43 @@
+  <!-- bagian view reservasi -->
+  <div class="container padding-reservasi">
+
+    <h2 class="judul-admin-view">Daftar Pesan/Pertanyaan</h2>
+
+  <!-- bagian view pesan -->
+  <div class="container padding-pesan">
+
+    <!-- tabel -->
+    <div class="table-responsive" id="#bagian-pesan">
+      <form action="/admin/pertanyaan/:id" method="delete">
+        <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Alamat Email</th>
+                  <th scope="col">Pesan</th>
+                  <th scope="col">Hapus Pesan</th>
+              </tr>
+          </thead>
+          <tbody>
+            <%= i=1; %> 
+            <% pertanyaan.forEach(function(tanya){ %> 
+              <tr>
+                <th scope="row"> <%= i++; %>  </th>
+                <td> <%= tanya.nama %>  </td>
+                <td> <%= tanya.email %>  </td>
+                <td> <%= tanya.pesan %>  </td>
+                <td>
+                  <a class="btn btn-danger text-center" href="/admin/pertanyaan/<%= tanya.id %>" data-toggle="tooltip" 
+                  data-placement="bottom" id="reject1" title="Hapus pesan">&#10005;</button>
+                </td>
+              </tr>
+            <% }); %> 
+          </tbody>
+      </table>
+      </form>
+    </div>
+    <!-- akhir tabel -->
+  </div> 
+  <!-- akhir bagian view pesan -->
+</div>

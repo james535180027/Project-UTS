@@ -1,0 +1,62 @@
+[
+  {
+    "nama": "makanan1",
+    "gambar": "gambarm1",
+    "deskripsi": "Ini merupakan makanan tipe satu"
+  },
+  {
+    "nama": "makanan2",
+    "gambar": "gambarm2",
+    "deskripsi": "Ini merupakan makanan tipe dua"
+  },
+  {
+    "nama": "makanan3",
+    "gambar": "gambarm3",
+    "deskripsi": "Ini merupakan makanan tipe tiga"
+  },
+  {
+    "nama": "makanan4",
+    "gambar": "gambarm1",
+    "deskripsi": "Ini merupakan makanan tipe empat"
+  },
+  {
+    "nama": "minuman1",
+    "gambar": "gambard1",
+    "deskripsi": "Ini merupakan minuman tipe satu"
+  },
+  {
+    "nama": "minuman2",
+    "gambar": "gambard2",
+    "deskripsi": "Ini merupakan minuman tipe dua"
+  },
+  {
+    "nama": "minuman3",
+    "gambar": "gambard3",
+    "deskripsi": "Ini merupakan minuman tipe tiga"
+  },
+  {
+    "nama": "minuman4",
+    "gambar": "gambard4",
+    "deskripsi": "Ini merupakan minuman tipe empat"
+  },
+  {
+    "nama": "penutup1",
+    "gambar": "gambarp1",
+    "deskripsi": "Ini merupakan penutup tipe satu"
+  },
+  {
+    "nama": "penutup2",
+    "gambar": "gambarp2",
+    "deskripsi": "Ini merupakan penutup tipe dua"
+  },
+  {
+    "nama": "penutup3",
+    "gambar": "gambarp1",
+    "deskripsi": "Ini merupakan penutup tipe tiga"
+  },
+  {
+    "nama": "penutup4",
+    "gambar": "gambarp2",
+    "deskripsi": "Ini merupakan penutup tipe empat"
+  }
+]
