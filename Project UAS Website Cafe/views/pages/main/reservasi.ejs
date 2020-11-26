@@ -1,0 +1,103 @@
+<div class="jumbotron jumbotron-fluid jumbotron-reservasi">
+    <div class="container">
+      <p class="custfonts1">Reservasi</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <img src="img/reservasi.svg" class="img-fluid img-reservasi"/>
+      </div>
+      <div class="col">
+        <h3 class="animated animatedFadeInUp fadeInUp judul-reservasi">
+          Reservasi Kunjunganmu Sekarang
+        </h3>
+
+        <!-- form reservasi -->
+        <form class="form-reservasi" action="/reservasi" method="post">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="text" class="form-control" id="telepon" name="telepon" placeholder="0812345678910">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Jumlah Orang</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="pengunjung">
+              <option value="" disabled selected>Pilih jumlah orang yang akan berkunjung</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Waktu Reservasi</label>
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="exampleInputTanggal"
+              aria-describedby="datetimeHelp"
+              placeholder=""
+              name="waktu"
+            />
+          </div>
+          <% if(locals.logged) { %> 
+            <button type="submit" class="btn btn-danger btn-reservasi" data-toggle="modal" data-target="#notif-reservasi">Submit</button>
+          <% } else{ %>
+            <button type="submit" disabled class="btn btn-danger btn-reservasi" data-toggle="modal" data-target="#notif-reservasi">Submit</button>
+          <% } %>
+          
+        </form>
+        <!-- akhir form reservasi -->
+      </div>
+    </div>
+  </div>
+
+  <!-- bagian modal untuk notif -->
+  <div class="modal fade"
+       id="notif-reservasi"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Permintaan reservasi telah terkirim!</h5>
+          <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          >
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Anda telah berhasil mengirimkan permintaan reservasi. Mohon untuk cek email anda untuk melihat status konfirmasi reservasi anda. Terima kasih!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal">
+          OK
+        </button>
+      </div> 
+      </div>
+    </div>
+  </div>
+  <!-- akhir bagian modal untuk notif -->
