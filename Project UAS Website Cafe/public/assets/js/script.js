@@ -74,6 +74,8 @@ $(document).ready(function () {
     if (confirm("Konfirmasi Reservasi ?")) {
       $(this).closest("tr").remove();
       alert("Berhasil Mengonfirmasi");
+    } else {
+      return false;
     }
   });
   $("table").on("click", "#reject", function () {
