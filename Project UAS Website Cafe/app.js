@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "./public/assets")));
 app.use(
   session({
     secret: "some_secret_key",
-    cookie: {},
+    cookie: { express: new Date(Date.now() + 900) },
   })
 );
 
