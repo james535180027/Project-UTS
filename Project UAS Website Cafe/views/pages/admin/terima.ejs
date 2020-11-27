@@ -5,35 +5,37 @@
 
     <!-- tabel -->
     <div class="table-responsive">
+      <form action="/admin/pesanan-diterima/:id" method="delete">
         <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Alamat Email</th>
-                    <th scope="col">Nomor Telepon</th>
-                    <th scope="col">Jumlah Orang</th>
-                    <th scope="col">Waktu</th>
-                    <th scope="col">Selesai</th>
-                </tr>
-            </thead>
-            <tbody>
-                <%= i=1; %> 
-                <% booking.forEach(function(booked){ %> 
-              <tr id="barisData">
-                <th> <%= i++; %>  </th>
-                <td> <%= booked.nama %>  </td>
-                <td> <%= booked.email %>  </td>
-                <td> <%= booked.no_telp %>  </td>
-                <td> <%= booked.pengunjung %> </td>
-                <td> <%= booked.waktu %></td>
-                <td>
-                    <a class="btn btn-success" href="/pesanan-diterima/<%= booked.id  %> " data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
-                </td>
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Alamat Email</th>
+                  <th scope="col">Nomor Telepon</th>
+                  <th scope="col">Jumlah Orang</th>
+                  <th scope="col">Waktu</th>
+                  <th scope="col">Selesai</th>
               </tr>
-            <% }); %> 
-            </tbody>
-        </table>
+          </thead>
+          <tbody>
+              <%= i=1; %> 
+              <% booking.forEach(function(booked){ %> 
+            <tr id="barisData">
+              <th> <%= i++; %>  </th>
+              <td> <%= booked.nama %>  </td>
+              <td> <%= booked.email %>  </td>
+              <td> <%= booked.no_telp %>  </td>
+              <td> <%= booked.pengunjung %> </td>
+              <td> <%= booked.waktu %></td>
+              <td>
+                  <a class="btn btn-success" href="/admin/pesanan-diterima/<%= booked.id %> " data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
+              </td>
+            </tr>
+          <% }); %> 
+          </tbody>
+      </table>
+      </form>
     </div>
     <!-- akhir tabel -->
   </div>

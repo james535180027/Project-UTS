@@ -108,4 +108,17 @@ router.get("/pesanan-diterima", async (req, res) => {
   }
 });
 
+router.get("/pesanan-diterima/:id", async (req, res) => {
+  const id = req.params.id;
+  await booked.deleteMany({
+    _id: id,
+  });
+  try {
+    console.log("Success");
+    res.redirect("/admin/pesanan-diterima");
+  } catch (err) {
+    res.send(err);
+  }
+});
+
 module.exports = router;
