@@ -14,7 +14,7 @@
                     <th scope="col">Nomor Telepon</th>
                     <th scope="col">Jumlah Orang</th>
                     <th scope="col">Waktu</th>
-                    <th scope="col">Noted</th>
+                    <th scope="col">Selesai</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,8 +28,7 @@
                 <td> <%= booked.pengunjung %> </td>
                 <td> <%= booked.waktu %></td>
                 <td>
-                    <a class="btn btn-success" href="/pesanan-diterima/<%= bookr.id  %> " data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
-                    <a class="btn btn-danger"  data-toggle="tooltip" data-placement="bottom" id="reject" title="Tolak reservasi">&#10005;</button>
+                    <a class="btn btn-success" href="/pesanan-diterima/<%= booked.id  %> " data-toggle="tooltip" data-placement="bottom" id="acc" title="Terima reservasi">&#10003;</button>
                 </td>
               </tr>
             <% }); %> 

@@ -55,6 +55,9 @@ router.post("/login", async (req, res) => {
             if (data[0].status == "user") {
               req.session.user = data[0].status;
               req.session.username = data[0].username;
+              req.session.email = data[0].email;
+              req.session.telp = data[0].no_tlp;
+              req.session.id = data[0]._id.toString();
               res.redirect("/");
             } else if (data[0].status == "admin") {
               req.session.user = data[0].status;
@@ -85,30 +88,36 @@ router.post("/registrasi", async (req, res) => {
   const no_tlp = req.body.no_tlp;
   const password = req.body.password;
 
-  bcrypt.genSalt(10, function (err, salt) {
-    if (err) {
-      throw err;
-    } else {
-      bcrypt.hash(password, salt, function (err, hash) {
-        if (err) {
-          throw err;
-        } else {
-          console.log(hash);
-          var user_insert = new user({
-            username: username,
-            email: email,
-            no_tlp: no_tlp,
-            password: hash,
-          });
-          user_insert.save((err, product) => {
-            if (err) console.log(err);
-            console.log(JSON.stringify(product));
-            res.redirect("/auth/login");
-          });
-        }
-      });
-    }
-  });
+  let baris = user.find({ username: username, email: email });
+  if ((await baris).length > 0) {
+    console.log("Username already taken");
+    res.redirect("/auth/registrasi");
+  } else {
+    bcrypt.genSalt(10, function (err, salt) {
+      if (err) {
+        throw err;
+      } else {
+        bcrypt.hash(password, salt, function (err, hash) {
+          if (err) {
+            throw err;
+          } else {
+            console.log(hash);
+            var user_insert = new user({
+              username: username,
+              email: email,
+              no_tlp: no_tlp,
+              password: hash,
+            });
+            user_insert.save((err, product) => {
+              if (err) console.log(err);
+              console.log(JSON.stringify(product));
+              res.redirect("/auth/login");
+            });
+          }
+        });
+      }
+    });
+  }
 });
 
 router.get("/logout", async (req, res) => {

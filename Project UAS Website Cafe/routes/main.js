@@ -159,6 +159,10 @@ router.post("/kontak", async (req, res) => {
 router.get("/settings", async (req, res) => {
   res.render("layouts/auth", {
     Template: "pengaturan",
+    user: req.session.username,
+    email: req.session.email,
+    telp: req.session.telp,
+    id: req.session.id,
   });
 });
 

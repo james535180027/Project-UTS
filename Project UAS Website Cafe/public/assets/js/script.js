@@ -79,22 +79,36 @@ $(document).ready(function () {
     }
   });
   $("table").on("click", "#reject", function () {
-    $("#ModalTolak").modal("toggle");
-    $("#btnTolak").click(() => {
-      $("#ModalTolak").modal("hide");
+    if (confirm("Tolak Reservasi ?")) {
       $(this).closest("tr").remove();
-    });
+      alert("Berhasil Mengonfirmasi");
+    } else {
+      return false;
+    }
   });
   // Bagian delete pesan done with konfirmasi
   // Cukup tambahkan return false
   $("table").on("click", "#reject1", function () {
     if (confirm("Hapus Pesan ?")) {
       $(this).closest("tr").remove();
-    }else{
+    } else {
       return false;
     }
   });
-  $(".close").on("click", () => {});
+  $("#kirimpesan").on("click", () => {
+    if (confirm("Kirim pesan ?")) {
+      alert("Pesan berhasil dikirim");
+    } else {
+      return false;
+    }
+  });
+  $("#kirimbook").on("click", () => {
+    if (confirm("Kirim reservasi ?")) {
+      alert("Reservasi berhasil dikirim");
+    } else {
+      return false;
+    }
+  });
 });
 
 const makanan = "makanan";

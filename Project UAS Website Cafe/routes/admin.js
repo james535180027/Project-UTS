@@ -31,14 +31,35 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/admin/:id", async (req, res) => {
+router.get("/rejected/:id", async (req, res) => {
   const id = req.params.id;
-  await question.findById({
+  await reservation.deleteMany({
     _id: id,
   });
   try {
     console.log("Success");
-    res.redirect("/admin/pesanan-diterima");
+    res.redirect("/admin");
+  } catch (err) {
+    res.send(err);
+  }
+});
+
+router.get("/confirmed/:id", async (req, res) => {
+  const id = req.params.id;
+
+  let datas = reservation.findById({ _id: id });
+  datas.exec((err, data) => {
+    if (data) {
+      booked.insertMany(data);
+      console.log(JSON.stringify(data));
+    }
+  });
+  await reservation.deleteMany({
+    _id: id,
+  });
+  try {
+    console.log("Success");
+    res.redirect("/admin");
   } catch (err) {
     res.send(err);
   }
