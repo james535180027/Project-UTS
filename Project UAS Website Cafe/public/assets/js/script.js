@@ -85,13 +85,15 @@ $(document).ready(function () {
       $(this).closest("tr").remove();
     });
   });
-  // $("table").on("click", "#reject1", function () {
-  //   if (confirm("Hapus Pesan ?")) {
-  //     $(this).closest("tr").remove();
-  //   }else{
-
-  //   }
-  // });
+  // Bagian delete pesan done with konfirmasi
+  // Cukup tambahkan return false
+  $("table").on("click", "#reject1", function () {
+    if (confirm("Hapus Pesan ?")) {
+      $(this).closest("tr").remove();
+    }else{
+      return false;
+    }
+  });
   $(".close").on("click", () => {});
 });
 
