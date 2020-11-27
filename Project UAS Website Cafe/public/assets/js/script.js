@@ -78,6 +78,14 @@ $(document).ready(function () {
       return false;
     }
   });
+  $("table").on("click", "#accepted", function () {
+    if (confirm("Konfirmasi Selesai ?")) {
+      $(this).closest("tr").remove();
+      alert("Berhasil Menghapus dari daftar Reservasi");
+    } else {
+      return false;
+    }
+  });
   $("table").on("click", "#reject", function () {
     if (confirm("Tolak Reservasi ?")) {
       $(this).closest("tr").remove();
