@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const session = require("express-session");
+const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
@@ -10,6 +11,7 @@ app.set("view engine", "ejs");
 
 // body-parser to parse request body
 app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 // static files
 app.use(express.static(path.join(__dirname, "./public/assets")));

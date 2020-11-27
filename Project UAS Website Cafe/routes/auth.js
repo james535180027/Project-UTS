@@ -14,9 +14,9 @@ const router = express.Router();
 const user = require("../model/user");
 
 router.get("/login", async (req, res) => {
-  if (req.session.user === "admin") {
+  if (req.session.status === "admin") {
     res.redirect("/admin");
-  } else if (req.session.user === "user") {
+  } else if (req.session.status === "user") {
     res.redirect("/");
   } else {
     res.render("layouts/auth", {
@@ -53,14 +53,14 @@ router.post("/login", async (req, res) => {
             });
           } else {
             if (data[0].status == "user") {
-              req.session.user = data[0].status;
+              req.session.status = data[0].status;
               req.session.username = data[0].username;
               req.session.email = data[0].email;
               req.session.telp = data[0].no_tlp;
               req.session.id = data[0]._id.toString();
               res.redirect("/");
             } else if (data[0].status == "admin") {
-              req.session.user = data[0].status;
+              req.session.status = data[0].status;
               res.redirect("/admin");
             }
           }

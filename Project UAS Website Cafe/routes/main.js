@@ -15,13 +15,13 @@ const question = require("../model/question.js");
 const reservation = require("../model/reservasi.js");
 
 router.get("/", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "index",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
@@ -32,13 +32,13 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/menu", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "menu",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
@@ -49,13 +49,13 @@ router.get("/menu", async (req, res) => {
 });
 
 router.get("/reservasi", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "reservasi",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
@@ -88,13 +88,13 @@ router.post("/reservasi", async (req, res) => {
 });
 
 router.get("/lokasi", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "lokasi",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
@@ -105,13 +105,13 @@ router.get("/lokasi", async (req, res) => {
 });
 
 router.get("/gallery", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "gallery",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
@@ -122,13 +122,13 @@ router.get("/gallery", async (req, res) => {
 });
 
 router.get("/kontak", async (req, res) => {
-  if (req.session.user === "user") {
+  if (req.session.status === "user") {
     res.render("layouts/index", {
       Template: "kontak",
       logged: true,
       user: req.session.username,
     });
-  } else if (req.session.user === "admin") {
+  } else if (req.session.status === "admin") {
     res.redirect("/admin");
   } else {
     res.render("layouts/index", {
