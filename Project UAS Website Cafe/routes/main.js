@@ -166,4 +166,40 @@ router.get("/settings", async (req, res) => {
   });
 });
 
+router.post("/settings", async (req, res) => {
+  const username = req.session.username;
+  const newPass1 = req.body.ubahPassword1;
+  const newPass2 = req.body.ubahPassword2;
+  if (newPass1 !== newPass2) {
+    console.log("Konfirmasi password berbeda");
+    res.redirect("/settings");
+  } else {
+    bcrypt.genSalt(10, (err, salt) => {
+      if (err) {
+        throw err;
+      } else {
+        bcrypt.hash(newPass1, salt, (err, hash) => {
+          if (err) {
+            throw err;
+          } else {
+            console.log(hash);
+            user.updateOne(
+              { username: username },
+              { $set: { password: hash } },
+              (err, data) => {
+                if (err) {
+                  console.log("Error");
+                } else {
+                  console.log(data);
+                  res.redirect("/settings");
+                }
+              }
+            );
+          }
+        });
+      }
+    });
+  }
+});
+
 module.exports = router;

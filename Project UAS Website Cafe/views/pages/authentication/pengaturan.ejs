@@ -2,29 +2,29 @@
     <h2 class="judul-login">Pengaturan Akun</h2>
     <div class="card card-login">
         <div class="card-body">
-            <form>
+            <form action="/settings" method="post">
                 <label for="exampleInputEmail1">Username: <%= user %></label>
                 <br>
                 <label for="exampleInputPassword1">Alamat email: <%= email %></label>
                 <div class="form-group form-group-login">
                     <label for="exampleInputPassword1">Nomor telepon: <%= telp %></label>
                 </div>
-                <div class="form-group form-group-login">
-                    <label for="exampleInputEmail1">Ubah nomor telepon</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan nomor telepon yang baru">
-                </div>
+                <!-- <div class="form-group form-group-login">
+                    <label for="ubahNomor">Ubah nomor telepon</label>
+                    <input type="text" class="form-control"  name="ubahNomor" placeholder="Masukan nomor telepon yang baru"/>
+                </div> -->
 
                 <h4 class="pembatas-form-login"><span>Ubah password</span></h4>
 
                 <div class="form-group form-group-registrasi">
-                    <label for="exampleInputPassword1">Password baru</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    <label for="ubahPassword1">Password baru</label>
+                    <input type="password" class="form-control" name="ubahPassword1"/>
                   </div>
                   <div class="form-group form-group-registrasi">
-                      <label for="exampleInputPassword2">Konfirmasi Password baru</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2" required>
+                      <label for="ubahPassword2">Konfirmasi Password baru</label>
+                      <input type="password" class="form-control" name="ubahPassword2"/>
                   </div>
-                  <button type="button" class="btn btn-danger btn-lg btn-block" id="gantiPass">Simpan</button>
+                  <button type="submit" class="btn btn-danger btn-lg btn-block">Simpan</button>
             </form>
         </div>
     </div>
