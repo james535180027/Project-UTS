@@ -11,6 +11,7 @@ db.once("open", () => {
   console.log("MongoDB Connected");
 });
 const router = express.Router();
+const user = require("../model/user.js");
 const question = require("../model/question.js");
 const reservation = require("../model/reservasi.js");
 
