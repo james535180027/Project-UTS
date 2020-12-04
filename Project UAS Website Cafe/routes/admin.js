@@ -52,7 +52,7 @@ router.get("/rejected/:id", async (req, res) => {
       let mailOptions = {
         from: "no-reply@dummyCoffe.com",
         to: `${JSON.stringify(data.email)}`,
-        text: `kepada Mr/Mrs. ${data.nama}, Cafe kami pada jadwal yang anda pilih sedang penuh sehingga dengan berat hati kami harus menolak permintaan reservasi anda .`,
+        text: `Kepada Mr/Mrs. ${data.nama}, Cafe kami pada jadwal yang anda pilih sedang penuh sehingga dengan berat hati kami harus menolak permintaan reservasi anda.`,
       };
 
       transporter.sendMail(mailOptions, function (err, data) {
@@ -96,7 +96,7 @@ router.get("/confirmed/:id", async (req, res) => {
       let mailOptions = {
         from: "no-reply@dummyCoffe.com",
         to: `${JSON.stringify(data.email)}`,
-        text: " Test Nodemailer",
+        text: `Kepada Mr/Mrs. ${data.nama}, Permintaan reservasi anda telah kami terima. Silahkan datang ke cafe kami sesuai dengan waktu dan jumlah orang yang telah anda pesan.`,
       };
 
       transporter.sendMail(mailOptions, function (err, data) {

@@ -10,10 +10,13 @@
                 <div class="form-group form-group-login">
                   <label for="password">Password</label>
                   <input type="password" class="form-control" id="password" name="password">
-                  <% if(locals.error){ %> 
-                    <span class="text-danger pl-2"><%= error %></span>
-                  <% } %> 
                 </div>
+                <% if(locals.error){ %> 
+                  <!-- <span class="text-danger pl-2"><%= error %></span> -->
+                  <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                  </div>
+                <% } %>
                 <button type="submit" class="btn btn-danger btn-lg btn-block" id="cekLogin" value="Login">Login</button>
 
                 <h4 class="pembatas-form-login"><span>ATAU</span></h4>

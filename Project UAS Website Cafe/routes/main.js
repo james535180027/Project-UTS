@@ -12,9 +12,9 @@ db.once("open", () => {
   console.log("MongoDB Connected");
 });
 const router = express.Router();
-const user = require("../model/user.js");
 const question = require("../model/question.js");
 const reservation = require("../model/reservasi.js");
+const user = require("../model/user.js");
 
 router.get("/", async (req, res) => {
   if (req.session.status === "user") {
@@ -159,13 +159,22 @@ router.post("/kontak", async (req, res) => {
 });
 
 router.get("/settings", async (req, res) => {
-  res.render("layouts/auth", {
-    Template: "pengaturan",
-    user: req.session.username,
-    email: req.session.email,
-    telp: req.session.telp,
-    id: req.session.id,
-  });
+  if (req.session.status === "user") {
+    res.render("layouts/auth", {
+      Template: "pengaturan",
+      username: req.session.username,
+      email: req.session.email,
+      telp: req.session.telp,
+      id: req.session.id,
+    });
+  } else if (req.session.status === "admin") {
+    res.redirect("/admin");
+  } else {
+    res.render("layouts/auth", {
+      Template: "login",
+      logged: false,
+    });
+  }
 });
 
 router.post("/settings", async (req, res) => {
@@ -174,7 +183,14 @@ router.post("/settings", async (req, res) => {
   const newPass2 = req.body.ubahPassword2;
   if (newPass1 !== newPass2) {
     console.log("Konfirmasi password berbeda");
-    res.redirect("/settings");
+    res.render("layouts/auth", {
+      Template: "pengaturan",
+      error_updatePassword: "Konfirmasi password berbeda",
+      username: req.session.username,
+      email: req.session.email,
+      telp: req.session.telp,
+      id: req.session.id,
+    });
   } else {
     bcrypt.genSalt(10, (err, salt) => {
       if (err) {
@@ -193,7 +209,8 @@ router.post("/settings", async (req, res) => {
                   console.log("Error");
                 } else {
                   console.log(data);
-                  res.redirect("/settings");
+                  req.session.destroy();
+                  res.redirect("/auth/login");
                 }
               }
             );

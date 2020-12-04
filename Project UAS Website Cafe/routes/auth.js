@@ -34,7 +34,7 @@ router.post("/login", async (req, res) => {
   if ((await baris).length < 1) {
     res.render("layouts/auth", {
       Template: "login",
-      error: "Username does not exist",
+      error: "Username tidak terdaftar",
     });
   } else {
     user.find({ username: username }).exec((err, data) => {
@@ -50,7 +50,7 @@ router.post("/login", async (req, res) => {
             console.log("Password didn't match");
             res.render("layouts/auth", {
               Template: "login",
-              error: "Wrong username or password",
+              error: "Username atau password salah",
             });
           } else {
             if (data[0].status == "user") {
@@ -88,36 +88,47 @@ router.post("/registrasi", async (req, res) => {
   const email = req.body.email;
   const no_tlp = req.body.no_tlp;
   const password = req.body.password;
+  const password2 = req.body.password2;
 
   let baris = user.find({ username: username, email: email });
   if ((await baris).length > 0) {
     console.log("Username already taken");
-    res.redirect("/auth/registrasi");
-  } else {
-    bcrypt.genSalt(10, function (err, salt) {
-      if (err) {
-        throw err;
-      } else {
-        bcrypt.hash(password, salt, function (err, hash) {
-          if (err) {
-            throw err;
-          } else {
-            console.log(hash);
-            var user_insert = new user({
-              username: username,
-              email: email,
-              no_tlp: no_tlp,
-              password: hash,
-            });
-            user_insert.save((err, product) => {
-              if (err) console.log(err);
-              console.log(JSON.stringify(product));
-              res.redirect("/auth/login");
-            });
-          }
-        });
-      }
+    res.render("layouts/auth", {
+      Template: "registrasi",
+      error_username: "Username sudah terdaftar",
     });
+  } else {
+    if (password !== password2) {
+      res.render("layouts/auth", {
+        Template: "registrasi",
+        error_password: "Konfirmasi password berbeda",
+      });
+    } else {
+      bcrypt.genSalt(10, function (err, salt) {
+        if (err) {
+          throw err;
+        } else {
+          bcrypt.hash(password, salt, function (err, hash) {
+            if (err) {
+              throw err;
+            } else {
+              console.log(hash);
+              var user_insert = new user({
+                username: username,
+                email: email,
+                no_tlp: no_tlp,
+                password: hash,
+              });
+              user_insert.save((err, product) => {
+                if (err) console.log(err);
+                console.log(JSON.stringify(product));
+                res.redirect("/auth/login");
+              });
+            }
+          });
+        }
+      });
+    }
   }
 });
 
