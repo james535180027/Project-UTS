@@ -1,7 +1,8 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
-const db_uri = 'mongodb+srv://Audie:535180021@coffeeteria.wmc4g.mongodb.net/Coffeeteria?retryWrites=true&w=majority';
+const db_uri =
+  "mongodb+srv://Audie:535180021@coffeeteria.wmc4g.mongodb.net/Coffeeteria?retryWrites=true&w=majority";
 mongoose.connect(db_uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -13,6 +14,7 @@ db.once("open", () => {
 });
 const router = express.Router();
 const user = require("../model/user");
+const adm = require("../model/administrator");
 
 router.get("/login", async (req, res) => {
   if (req.session.status === "admin") {
@@ -30,44 +32,59 @@ router.post("/login", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
-  let baris = user.find({ username: username });
-  if ((await baris).length < 1) {
+  let akunUser = user.find({ username: username });
+  let akunAdm = adm.find({ username: username });
+
+  if ((await akunAdm).length < 1 && (await akunUser).length < 1) {
     res.render("layouts/auth", {
       Template: "login",
       error: "Username tidak terdaftar",
     });
   } else {
-    user.find({ username: username }).exec((err, data) => {
-      if (err) {
-        console.log("empty");
-      }
-      if (data) {
-        console.log("Find : " + JSON.stringify(data));
-        bcrypt.compare(password, data[0].password, function (err, isMatch) {
-          if (err) {
-            console.log("empty");
-          } else if (!isMatch) {
-            console.log("Password didn't match");
-            res.render("layouts/auth", {
-              Template: "login",
-              error: "Username atau password salah",
-            });
-          } else {
-            if (data[0].status == "user") {
+    if ((await akunUser).length > 0) {
+      user.find({ username: username }).exec((err, data) => {
+        if (err) console.log(err);
+        if (data) {
+          console.log(`Find : ${JSON.stringify(data)}`);
+          bcrypt.compare(password, data[0].password, (err, isMatch) => {
+            if (err) console.log("empty");
+            else if (!isMatch) {
+              console.log("Password did not match");
+              res.render("layouts/auth", {
+                Template: "login",
+                error: "Username atau Password salah",
+              });
+            } else {
               req.session.status = data[0].status;
               req.session.username = data[0].username;
               req.session.email = data[0].email;
               req.session.telp = data[0].no_tlp;
-              req.session.id = data[0]._id.toString();
               res.redirect("/");
-            } else if (data[0].status == "admin") {
+            }
+          });
+        }
+      });
+    } else {
+      adm.find({ username: username }).exec((err, data) => {
+        if (err) console.log(err);
+        if (data) {
+          console.log(`Find : ${JSON.stringify(data)}`);
+          bcrypt.compare(password, data[0].password, (err, isMatch) => {
+            if (err) console.log("empty");
+            else if (!isMatch) {
+              console.log("Password did not match");
+              res.render("layouts/auth", {
+                Template: "login",
+                error: "Username atau Password salah",
+              });
+            } else {
               req.session.status = data[0].status;
               res.redirect("/admin");
             }
-          }
-        });
-      }
-    });
+          });
+        }
+      });
+    }
   }
 });
 
@@ -91,7 +108,8 @@ router.post("/registrasi", async (req, res) => {
   const password2 = req.body.password2;
 
   let baris = user.find({ username: username, email: email });
-  if ((await baris).length > 0) {
+  let barisAdm = adm.find({ username: username, email: email });
+  if ((await baris).length > 0 || (await barisAdm).length > 0) {
     console.log("Username already taken");
     res.render("layouts/auth", {
       Template: "registrasi",
