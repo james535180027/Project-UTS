@@ -3,8 +3,9 @@ const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const ejs = require("ejs");
 const path = require("path");
-const db_uri =
-  "mongodb+srv://Audie:535180021@coffeeteria.wmc4g.mongodb.net/Coffeeteria?retryWrites=true&w=majority";
+require("dotenv").config();
+const db_uri = process.env.MONGOLAB_URI;
+
 mongoose.connect(db_uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -20,7 +21,6 @@ const question = require("../model/question.js");
 const reservation = require("../model/reservasi.js");
 const booked = require("../model/booked.js");
 const { getMaxListeners } = require("../model/question.js");
-require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 router.get("/", async (req, res) => {
