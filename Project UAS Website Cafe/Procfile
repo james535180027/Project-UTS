@@ -1,0 +1,3 @@
+"scripts": {
+  "start": "node 'Project UAS Website Cafe/app.js'"
+}
