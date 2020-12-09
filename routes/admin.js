@@ -107,43 +107,36 @@ router.get("/confirmed/:id", async (req, res) => {
           pass: "KelompokWeb18",
         },
       });
-      //let passVariable = data.nama; //tes store ke string dulu daripada baca secara direct , pakai " ` " (fitur ES6) untuk formatting di html mailOptions
-      //template eksekusi terakhiran sebelum fungsi send
-      //__dirname point ke directory yang lagi dieksekusi sekarang , bisa coba custom path
-      //const dataTemplate = await ejs.renderFile('layouts/acceptreservasi.ejs', { nama: `${data.nama}` , pengunjung: `${data.pengunjung}`, waktu: `${data.waktu}`}); //jangan lupa Asyncnya
+      
     
-ejs.renderFile(path.join(__dirname, '../', '/views/layouts/acceptreservasi.ejs'), { nama: `${data.nama}` , pengunjung: `${data.pengunjung}`, waktu: `${data.waktu}`, telepon: `${data.no_telp}`}, function(err,datatemplate) {
-    if(err) {console.log(err)} else {
-      let mailOptions = {
-        from: "no-reply@dummyCoffe.com",
-        to: `${JSON.stringify(data.email)}`,
-        subject: `Konfirmasi penerimaan reservasi`,
-        //text: `Kepada Mr/Mrs. ${data.nama}, Permintaan reservasi anda telah kami terima. Silahkan datang ke cafe kami sesuai dengan waktu dan jumlah orang yang telah anda pesan.`,
-        //html: '<b>Hey there! </b><br> This is our first message sent with Nodemailer<br /><img src="cid:uniq-mailtrap.png" alt="mailtrap" />',
-        //html: `<body style="background-color:#b2bec3;"><b>Kepada Mr/Mrs. ${passVariable}</b><br> Permintaan reservasi anda telah kami terima. Silahkan datang ke cafe kami sesuai dengan waktu dan jumlah orang yang telah anda pesan.</br><img src="cid:uniq-reservationpict.jpg" alt="reservation"/>`,
-        //attachments: [
-        //{
-        //filename: 'cafewaiter.jpg',
-        //path: 'https://i.postimg.cc/VLw7DvFj/cafewaiter.jpg',
-        //cid: 'uniq-reservationpict.jpg' 
-        // }
-        // ]
-        html: datatemplate
-      };
+      ejs.renderFile(
+        path.join(__dirname, '../', '/views/layouts/acceptreservasi.ejs'), 
+        { 
+          nama: `${data.nama}`, 
+          pengunjung: `${data.pengunjung}`, 
+          waktu: `${data.waktu}`, 
+          telepon: `${data.no_telp}`
+        }, 
+          function(err,datatemplate) {
+            if(err) {console.log(err)} else {
+              let mailOptions = {
+              from: "no-reply@dummyCoffe.com",
+              to: `${JSON.stringify(data.email)}`,
+              subject: `Konfirmasi penerimaan reservasi`,
+              html: datatemplate
+            };
 
-      transporter.sendMail(mailOptions, function (err, data) {
-        if (err) {
-          console.log("Error");
-        } else {
-          console.log("Send");
-        }
-      });
-
+            transporter.sendMail(mailOptions, function (err, data) {
+              if (err) {
+                console.log("Error");
+              } else {
+                console.log("Send");
+              }
+            });
+          }
+        })
       }
-
-    })
-    } //bagian data
-  });
+    });
 
   await reservation.deleteMany({
     _id: id,
