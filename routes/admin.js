@@ -4,8 +4,7 @@ const mongoose = require("mongoose");
 const ejs = require("ejs");
 const path = require("path");
 require("dotenv").config();
-const db_uri = process.env.MONGOLAB_URI;
-
+const db_uri = "mongodb+srv://Audie:535180021@coffeeteria.wmc4g.mongodb.net/Coffeeteria?retryWrites=true&w=majority";
 mongoose.connect(db_uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

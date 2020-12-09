@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const db_uri = process.env.MONGOLAB_URI;
+const db_uri = "mongodb+srv://Audie:535180021@coffeeteria.wmc4g.mongodb.net/Coffeeteria?retryWrites=true&w=majority";
 mongoose.connect(db_uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
