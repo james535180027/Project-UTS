@@ -1,0 +1,82 @@
+<div class="container">
+  <h2 class="judul-registrasi">Registrasi</h2>
+  <div class="card card-registrasi">
+      <div class="card-body">
+          <form action="/auth/registrasi" method="post">
+              <div class="form-group form-group-registrasi">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" required autofocus>
+              </div>
+              <% if(locals.error_username){ %>
+                <div class="alert alert-danger" role="alert">
+                  <%= error_username %>
+                </div>
+              <% } %>
+              <div class="form-group form-group-registrasi">
+                  <label for="email">Alamat Email</label>
+                  <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="no_tlp">Nomor Telepon</label>
+                  <input type="text" class="form-control" name="no_tlp" required>
+                  <small id="emailHelp" class="form-text text-muted">Kami tidak akan membagikan nomor telepon anda ke publik</small>
+              </div>
+              <div class="form-group form-group-registrasi">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" required>
+              </div>
+              <div class="form-group form-group-registrasi">
+                  <label for="password2">Konfirmasi Password</label>
+                  <input type="password" class="form-control" name="password2" required>
+                </div>
+                <% if(locals.error_password){ %> 
+                  <!-- <span class="text-danger pl-2"><%= error_password %></span> -->
+                  <div class="alert alert-danger" role="alert">
+                    <%= error_password %>
+                  </div>
+                <% } %>
+              <button type="submit" class="btn btn-danger btn-lg btn-block" value="Registrasi">Registrasi</button>
+
+              <div class="form-group form-check form-group-checkbox">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">Saya telah setuju dengan <a href="#modalSK" data-toggle="modal" data-target="#modalSK">Syarat & Ketentuan</a> yang berlaku</label>
+              </div>
+
+              <!-- modal s&k -->
+              <div class="modal fade" id="modalSK" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Syarat & Ketentuan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tristique sem. Nam congue hendrerit mauris, a hendrerit tellus semper eget. Nunc vel imperdiet tortor. Sed feugiat neque libero, dignissim hendrerit ligula rhoncus ut. Morbi feugiat bibendum facilisis. Praesent mollis, tellus eleifend consectetur scelerisque, ipsum diam efficitur purus, quis tincidunt enim felis quis nunc. Morbi rutrum odio sed nisl tincidunt mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis non massa orci. Sed orci arcu, porttitor quis posuere ac, posuere in nibh. Vivamus tincidunt dui ac erat lacinia, condimentum vestibulum mauris scelerisque. Cras vel efficitur neque. Sed venenatis dapibus ex, molestie luctus nisi egestas eget.
+                          <br><br>
+                          Vivamus blandit tellus ex, et ultricies est pharetra quis. Proin semper, lacus ut feugiat ultricies, eros sapien facilisis leo, nec tincidunt tellus neque dapibus lorem. In ex magna, faucibus et arcu et, pretium venenatis ipsum. Pellentesque sit amet arcu et sapien rhoncus consectetur. Donec et condimentum turpis. Donec finibus mollis mauris et finibus. Sed mollis pretium est, id sagittis urna consequat eget.
+                          <br><br>
+                          Curabitur ut elit iaculis, semper nulla id, volutpat lacus. Duis sodales porttitor leo eu tincidunt. Donec molestie mattis lectus id congue. Ut feugiat egestas elementum. Nullam lectus felis, lobortis sit amet urna vel, malesuada dapibus ex. Etiam ut feugiat nisi. Mauris lobortis lacinia condimentum.
+                          <br><br>
+                          Vivamus malesuada leo nec rutrum vestibulum. Nullam lobortis nisi at purus eleifend scelerisque. Cras scelerisque ut risus in maximus. Donec at leo mi. Phasellus varius tellus at viverra posuere. Integer fermentum urna id dignissim fermentum. In nec tincidunt ligula. Cras vehicula, dui non dapibus malesuada, nisi tellus vestibulum ante, id facilisis augue mi at quam. Aenean mattis aliquet magna non rutrum. Nullam in neque dapibus, dignissim purus ac, ultrices risus. Donec lacinia elit sem, quis viverra ante varius vel. Nulla sed dignissim enim. Maecenas cursus dolor id odio cursus, sit amet bibendum enim vestibulum. Maecenas faucibus ut ante sed consequat.
+                          <br><br>
+                          Ut sed pellentesque diam, nec gravida libero. Vivamus in lacus at elit sodales consequat nec at dui. Mauris viverra sem vitae elementum pulvinar. In viverra tortor leo, at tincidunt erat placerat ac. Sed bibendum nulla mauris, eu euismod tellus sagittis vehicula. Sed eu condimentum sapien. Nam cursus imperdiet tincidunt. Vivamus fermentum nisi ac risus cursus sodales. Cras purus leo, aliquam nec molestie nec, mattis id nibh. Fusce auctor lobortis purus, a tristique turpis interdum id.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- akhir modal -->
+
+              <h4 class="pembatas-form-registrasi"><span>ATAU</span></h4>
+
+              <p class="link-registrasi">Punya akun? <a href="login">Login</a></p>
+          </form>
+      </div>
+  </div>
+</div>

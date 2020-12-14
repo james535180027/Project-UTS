@@ -1,0 +1,87 @@
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid jumbotron-kontak">
+    <div class="container container-kontak">
+      <p class="custfonts1">Kontak</p>
+    </div>
+  </div>
+  <!-- akhir Jumbotron -->
+
+  <!-- Bagian contact online -->
+  <div class="container padding-kontak">
+    <div class="row">
+      <div class="col">
+        <p class="lead text-center">
+          <b>Grogol, Jakarta Barat</b><br />
+          <img src="img/mail.svg">
+          help@coffeeteria.co.id<br />
+          <img src="img/phone-call.svg">
+          (0812) 3333 4444 <br />
+        </p>
+        <br />
+        <img src="img/gambar-kontak.svg" class="img-fluid thumbnail-kontak">
+      </div>
+      <div class="col form-kontak">
+        <form action="/kontak" method="post">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" aria-describedby="nameHelp"
+              placeholder="Masukkan nama" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+              placeholder="Masukkan email" required/>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea class="form-control" id="pesan" name="pesan" rows="3" placeholder="Masukkan pesan" required></textarea>
+          </div>
+          <br /><br />
+          <div class="form-group padding-button-kontak">
+            <button type="submit" class="btn btn-danger btn-lg animated animatedFadeInUp fadeInUp"
+            data-toggle="modal" data-target="#notif" id="kirimpesan">
+            Submit
+            </button>
+          </div>
+        </form>
+      </div>  
+    </div>
+  </div>
+
+  <!-- bagian modal untuk notif -->
+  <!-- <div class="modal fade"
+       id="notif"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pesan anda sudah terkirim!</h5>
+          <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          >
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Anda telah berhasil mengirim pesan. Kami akan segera membalas pesan anda, silahkan periksa email anda untuk melihat balasan dari kami. Terima kasih!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal">
+          OK
+        </button>
+      </div> 
+      </div>
+    </div>
+  </div> -->
+  <!-- akhir bagian modal untuk notif -->
+  <!-- akhir Bagian contact online -->
